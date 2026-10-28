@@ -1,0 +1,8 @@
+0.7
+2020.2
+Sep 11 2025
+21:29:11
+D:/Data/FPGA/ZYNQ_XC7Z010_Practice/PL/Full_Adder/Full_Adder.sim/sim_1/behav/xsim/glbl.v,1748340170,verilog,,,,glbl,,,,,,,,
+D:/Data/FPGA/ZYNQ_XC7Z010_Practice/PL/Full_Adder/Full_Adder.srcs/sources_1/imports/Src/half_adder.v,1793175878,verilog,,D:/Data/FPGA/ZYNQ_XC7Z010_Practice/PL/Full_Adder/Src/Sim/testBench_full_adder.v,,half_adder,,,E:/Xilinx/2025.1.1/Vivado/data/rsb/busdef,,,,,
+D:/Data/FPGA/ZYNQ_XC7Z010_Practice/PL/Full_Adder/Src/Sim/testBench_full_adder.v,1793178099,verilog,,,,tb_full_adder,,,E:/Xilinx/2025.1.1/Vivado/data/rsb/busdef,,,,,
+D:/Data/FPGA/ZYNQ_XC7Z010_Practice/PL/Full_Adder/Src/full_adder.v,1793177746,verilog,,D:/Data/FPGA/ZYNQ_XC7Z010_Practice/PL/Full_Adder/Full_Adder.srcs/sources_1/imports/Src/half_adder.v,,full_adder,,,E:/Xilinx/2025.1.1/Vivado/data/rsb/busdef,,,,,

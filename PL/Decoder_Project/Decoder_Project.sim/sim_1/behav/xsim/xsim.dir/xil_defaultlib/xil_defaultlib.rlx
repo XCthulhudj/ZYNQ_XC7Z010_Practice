@@ -1,0 +1,7 @@
+0.7
+2020.2
+Sep 11 2025
+21:29:11
+D:/Data/FPGA/ZYNQ_XC7Z010_Practice/PL/Decoder_Project/Decoder_Project.sim/sim_1/behav/xsim/glbl.v,1748340170,verilog,,,,glbl,,,,,,,,
+D:/Data/FPGA/ZYNQ_XC7Z010_Practice/PL/Decoder_Project/Src/Sim/testBench_decoder.v,1793174033,verilog,,,,tb_decoder,,,E:/Xilinx/2025.1.1/Vivado/data/rsb/busdef,,,,,
+D:/Data/FPGA/ZYNQ_XC7Z010_Practice/PL/Decoder_Project/Src/decoder.v,1793173519,verilog,,D:/Data/FPGA/ZYNQ_XC7Z010_Practice/PL/Decoder_Project/Src/Sim/testBench_decoder.v,,decoder,,,E:/Xilinx/2025.1.1/Vivado/data/rsb/busdef,,,,,

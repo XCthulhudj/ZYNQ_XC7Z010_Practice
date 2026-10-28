@@ -1,0 +1,6 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Data/FPGA/ZYNQ_XC7Z010_Practice/PL/Half_Adder/Src/half_adder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module half_adder
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Data/FPGA/ZYNQ_XC7Z010_Practice/PL/Half_Adder/Src/Sim/testBench_half_adder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_half_adder
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Data/FPGA/ZYNQ_XC7Z010_Practice/PL/Half_Adder/Half_Adder.sim/sim_1/behav/xsim/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl

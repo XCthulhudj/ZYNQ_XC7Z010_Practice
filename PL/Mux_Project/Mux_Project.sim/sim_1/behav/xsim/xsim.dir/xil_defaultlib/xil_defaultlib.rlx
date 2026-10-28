@@ -1,0 +1,7 @@
+0.7
+2020.2
+Sep 11 2025
+21:29:11
+D:/Data/FPGA/ZYNQ_XC7Z010_Practice/PL/Mux_Project/Mux_Project.sim/sim_1/behav/xsim/glbl.v,1748340170,verilog,,,,glbl,,,,,,,,
+D:/Data/FPGA/ZYNQ_XC7Z010_Practice/PL/Mux_Project/Src/Sim/testBench_mux.v,1793170350,verilog,,,,tb_mux,,,E:/Xilinx/2025.1.1/Vivado/data/rsb/busdef,,,,,
+D:/Data/FPGA/ZYNQ_XC7Z010_Practice/PL/Mux_Project/Src/mux.v,1793169600,verilog,,D:/Data/FPGA/ZYNQ_XC7Z010_Practice/PL/Mux_Project/Src/Sim/testBench_mux.v,,mux,,,E:/Xilinx/2025.1.1/Vivado/data/rsb/busdef,,,,,
