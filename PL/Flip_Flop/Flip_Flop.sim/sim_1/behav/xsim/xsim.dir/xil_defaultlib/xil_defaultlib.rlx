@@ -1,0 +1,7 @@
+0.7
+2020.2
+Sep 11 2025
+21:29:11
+D:/Data/FPGA/ZYNQ_XC7Z010_Practice/PL/Flip_Flop/Flip_Flop.sim/sim_1/behav/xsim/glbl.v,1748340170,verilog,,,,glbl,,,,,,,,
+D:/Data/FPGA/ZYNQ_XC7Z010_Practice/PL/Flip_Flop/Src/Sim/testBench_flip_flop.v,1793346297,verilog,,,,tb_flip_flop;tb_flip_flop_1,,,E:/Xilinx/2025.1.1/Vivado/data/rsb/busdef,,,,,
+D:/Data/FPGA/ZYNQ_XC7Z010_Practice/PL/Flip_Flop/Src/flip_flop.v,1793346465,verilog,,D:/Data/FPGA/ZYNQ_XC7Z010_Practice/PL/Flip_Flop/Src/Sim/testBench_flip_flop.v,,d_latch;flip_flop;flip_flop_1;sr_latch,,,E:/Xilinx/2025.1.1/Vivado/data/rsb/busdef,,,,,
