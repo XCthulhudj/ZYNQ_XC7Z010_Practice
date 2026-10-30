@@ -1,0 +1,7 @@
+0.7
+2020.2
+Sep 11 2025
+21:29:11
+D:/Data/FPGA/ZYNQ_XC7Z010_Practice/PL/Counter_Project/Counter_Project.sim/sim_1/behav/xsim/glbl.v,1748340170,verilog,,,,glbl,,,,,,,,
+D:/Data/FPGA/ZYNQ_XC7Z010_Practice/PL/Counter_Project/Src/Sim/testBench_counter.v,1793348439,verilog,,,,tb_counter,,,E:/Xilinx/2025.1.1/Vivado/data/rsb/busdef,,,,,
+D:/Data/FPGA/ZYNQ_XC7Z010_Practice/PL/Counter_Project/Src/counter.v,1793348569,verilog,,D:/Data/FPGA/ZYNQ_XC7Z010_Practice/PL/Counter_Project/Src/Sim/testBench_counter.v,,counter,,,E:/Xilinx/2025.1.1/Vivado/data/rsb/busdef,,,,,
