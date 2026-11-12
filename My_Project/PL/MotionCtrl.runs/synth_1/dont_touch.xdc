@@ -12,4 +12,13 @@ set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==zynq_proces
 # IP: bd/zynq/ip/zynq_pl_led_blink_0_0/zynq_pl_led_blink_0_0.xci
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==zynq_pl_led_blink_0_0 || ORIG_REF_NAME==zynq_pl_led_blink_0_0} -quiet] -quiet
 
+# IP: bd/zynq/ip/zynq_axi_gpio_0_0/zynq_axi_gpio_0_0.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==zynq_axi_gpio_0_0 || ORIG_REF_NAME==zynq_axi_gpio_0_0} -quiet] -quiet
+
+# IP: bd/zynq/ip/zynq_axi_smc_1/zynq_axi_smc_1.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==zynq_axi_smc_1 || ORIG_REF_NAME==zynq_axi_smc_1} -quiet] -quiet
+
+# IP: bd/zynq/ip/zynq_rst_ps7_0_50M_1/zynq_rst_ps7_0_50M_1.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==zynq_rst_ps7_0_50M_1 || ORIG_REF_NAME==zynq_rst_ps7_0_50M_1} -quiet] -quiet
+
 # XDC: d:/Data/FPGA/ZYNQ_XC7Z010_Practice/My_Project/PL/MotionCtrl.gen/sources_1/bd/zynq/zynq_ooc.xdc

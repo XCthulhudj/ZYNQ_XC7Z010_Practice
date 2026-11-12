@@ -108,6 +108,7 @@ set rc [catch {
   create_msg_db init_design.pb
   set_param chipscope.maxJobs 2
   set_param general.usePosixSpawnForFork 1
+  set_param synth.incrementalSynthesisCache C:/Users/Administrator/AppData/Roaming/Xilinx/Vivado/.Xil/Vivado-26432-DESKTOP-NUN3FF0/incrSyn
   set_param checkpoint.writeSynthRtdsInDcp 1
   set_param xicom.use_bs_reader 1
   set_param runs.launchOptions { -jobs 3  }
@@ -121,6 +122,7 @@ OPTRACE "set parameters" START { }
   set_property parent.project_path D:/Data/FPGA/ZYNQ_XC7Z010_Practice/My_Project/PL/MotionCtrl.xpr [current_project]
   set_property ip_output_repo D:/Data/FPGA/ZYNQ_XC7Z010_Practice/My_Project/PL/MotionCtrl.cache/ip [current_project]
   set_property ip_cache_permissions {read write} [current_project]
+  set_property XPM_LIBRARIES {XPM_CDC XPM_FIFO XPM_MEMORY} [current_project]
 OPTRACE "set parameters" END { }
 OPTRACE "add files" START { }
   add_files -quiet D:/Data/FPGA/ZYNQ_XC7Z010_Practice/My_Project/PL/MotionCtrl.runs/synth_1/zynq_wrapper.dcp
@@ -297,6 +299,7 @@ set rc [catch {
   create_msg_db write_bitstream.pb
 OPTRACE "read constraints: write_bitstream" START { }
 OPTRACE "read constraints: write_bitstream" END { }
+  set_property XPM_LIBRARIES {XPM_CDC XPM_FIFO XPM_MEMORY} [current_project]
   catch { write_mem_info -force -no_partial_mmi zynq_wrapper.mmi }
 OPTRACE "write_bitstream setup" END { }
 OPTRACE "write_bitstream" START { }

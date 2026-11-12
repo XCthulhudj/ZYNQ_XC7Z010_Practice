@@ -1,7 +1,7 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version              : Vivado v.2025.1.1 (win64) Build 6233196 Thu Sep 11 21:27:30 MDT 2025
-| Date                      : Wed Nov  4 14:40:50 2026
+| Date                      : Thu Nov 12 17:56:34 2026
 | Host                      : DESKTOP-NUN3FF0 running 64-bit major release  (build 9200)
 | Command                   : report_io -file zynq_wrapper_io_placed.rpt
 | Design                    : zynq_wrapper
@@ -25,7 +25,7 @@ Table of Contents
 +---------------+
 | Total User IO |
 +---------------+
-|           133 |
+|           134 |
 +---------------+
 
 
@@ -253,7 +253,7 @@ Table of Contents
 | L16        |                         | High Range | IO_L11P_T1_SRCC_35      | User IO       |                   |      35 |            |      |                     |                      |         |            |           |          |      |                  |              |                   |              |
 | L17        |                         | High Range | IO_L11N_T1_SRCC_35      | User IO       |                   |      35 |            |      |                     |                      |         |            |           |          |      |                  |              |                   |              |
 | L18        |                         |            | GND                     | GND           |                   |         |            |      |                     |                      |     0.0 |            |           |          |      |                  |              |                   |              |
-| L19        |                         | High Range | IO_L9P_T1_DQS_AD3P_35   | User IO       |                   |      35 |            |      |                     |                      |         |            |           |          |      |                  |              |                   |              |
+| L19        | gpio_rtl_0_tri_io[0]    | High Range | IO_L9P_T1_DQS_AD3P_35   | BIDIR         | LVCMOS33          |      35 |         12 | SLOW |                     |                 NONE |         | FIXED      | PULLUP    |          |      | NONE             |              |                   |              |
 | L20        |                         | High Range | IO_L9N_T1_DQS_AD3N_35   | User IO       |                   |      35 |            |      |                     |                      |         |            |           |          |      |                  |              |                   |              |
 | M1         |                         |            | GND                     | GND           |                   |         |            |      |                     |                      |     0.0 |            |           |          |      |                  |              |                   |              |
 | M2         | DDR_ck_n                |            | PS_DDR_CKN_502          | IN            | DIFF_SSTL15       |         |            | FAST |                     |            FP_VTT_50 |         | FIXED      |           |          |      | NONE             |              |                   |              |

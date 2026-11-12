@@ -9,4 +9,9 @@ set_property PACKAGE_PIN M19 [get_ports {GPIO_EMIO_KEY_tri_io[0]}]
 set_property PULLTYPE PULLUP [get_ports {GPIO_EMIO_KEY_tri_io[0]}]
 set_property SLEW SLOW [get_ports {GPIO_EMIO_KEY_tri_io[0]}]
 
+
 set_property OFFCHIP_TERM NONE [get_ports GPIO_EMIO_KEY_tri_io[0]]
+set_property OFFCHIP_TERM NONE [get_ports gpio_rtl_0_tri_io[0]]
+set_property IOSTANDARD LVCMOS33 [get_ports {gpio_rtl_0_tri_io[0]}]
+set_property PACKAGE_PIN L19 [get_ports {gpio_rtl_0_tri_io[0]}]
+set_property PULLTYPE PULLUP [get_ports {gpio_rtl_0_tri_io[0]}]

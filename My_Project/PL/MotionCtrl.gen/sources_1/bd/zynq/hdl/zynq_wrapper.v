@@ -2,7 +2,7 @@
 //Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
 //--------------------------------------------------------------------------------
 //Tool Version: Vivado v.2025.1.1 (win64) Build 6233196 Thu Sep 11 21:27:30 MDT 2025
-//Date        : Tue Nov  3 09:08:03 2026
+//Date        : Thu Nov 12 17:46:37 2026
 //Host        : DESKTOP-NUN3FF0 running 64-bit major release  (build 9200)
 //Command     : generate_target zynq_wrapper.bd
 //Design      : zynq_wrapper
@@ -34,7 +34,8 @@ module zynq_wrapper
     FIXED_IO_ps_srstb,
     GPIO_EMIO_KEY_tri_io,
     KEY_IN0,
-    PL_LED);
+    PL_LED,
+    gpio_rtl_0_tri_io);
   inout [14:0]DDR_addr;
   inout [2:0]DDR_ba;
   inout DDR_cas_n;
@@ -59,6 +60,7 @@ module zynq_wrapper
   inout [0:0]GPIO_EMIO_KEY_tri_io;
   input KEY_IN0;
   output PL_LED;
+  inout [0:0]gpio_rtl_0_tri_io;
 
   wire [14:0]DDR_addr;
   wire [2:0]DDR_ba;
@@ -87,12 +89,21 @@ module zynq_wrapper
   wire [0:0]GPIO_EMIO_KEY_tri_t_0;
   wire KEY_IN0;
   wire PL_LED;
+  wire [0:0]gpio_rtl_0_tri_i_0;
+  wire [0:0]gpio_rtl_0_tri_io_0;
+  wire [0:0]gpio_rtl_0_tri_o_0;
+  wire [0:0]gpio_rtl_0_tri_t_0;
 
   IOBUF GPIO_EMIO_KEY_tri_iobuf_0
        (.I(GPIO_EMIO_KEY_tri_o_0),
         .IO(GPIO_EMIO_KEY_tri_io[0]),
         .O(GPIO_EMIO_KEY_tri_i_0),
         .T(GPIO_EMIO_KEY_tri_t_0));
+  IOBUF gpio_rtl_0_tri_iobuf_0
+       (.I(gpio_rtl_0_tri_o_0),
+        .IO(gpio_rtl_0_tri_io[0]),
+        .O(gpio_rtl_0_tri_i_0),
+        .T(gpio_rtl_0_tri_t_0));
   zynq zynq_i
        (.DDR_addr(DDR_addr),
         .DDR_ba(DDR_ba),
@@ -119,5 +130,8 @@ module zynq_wrapper
         .GPIO_EMIO_KEY_tri_o(GPIO_EMIO_KEY_tri_o_0),
         .GPIO_EMIO_KEY_tri_t(GPIO_EMIO_KEY_tri_t_0),
         .KEY_IN0(KEY_IN0),
-        .PL_LED(PL_LED));
+        .PL_LED(PL_LED),
+        .gpio_rtl_0_tri_i(gpio_rtl_0_tri_i_0),
+        .gpio_rtl_0_tri_o(gpio_rtl_0_tri_o_0),
+        .gpio_rtl_0_tri_t(gpio_rtl_0_tri_t_0));
 endmodule

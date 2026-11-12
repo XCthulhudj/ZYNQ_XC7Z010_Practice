@@ -57,8 +57,9 @@ if {$::dispatch::connected} {
 
 OPTRACE "synth_1" START { ROLLUP_AUTO }
 set_param general.usePosixSpawnForFork 1
+set_param synth.incrementalSynthesisCache C:/Users/Administrator/AppData/Roaming/Xilinx/Vivado/.Xil/Vivado-26432-DESKTOP-NUN3FF0/incrSyn
 set_param checkpoint.writeSynthRtdsInDcp 1
-set_msg_config -id {HDL-1065} -limit 10000
+set_param xicom.use_bs_reader 1
 set_msg_config -id {Synth 8-256} -limit 10000
 set_msg_config -id {Synth 8-638} -limit 10000
 OPTRACE "Creating in-memory project" START { }
@@ -70,6 +71,7 @@ set_param synth.vivado.isSynthRun true
 set_msg_config -source 4 -id {IP_Flow 19-2162} -severity warning -new_severity info
 set_property webtalk.parent_dir D:/Data/FPGA/ZYNQ_XC7Z010_Practice/My_Project/PL/MotionCtrl.cache/wt [current_project]
 set_property parent.project_path D:/Data/FPGA/ZYNQ_XC7Z010_Practice/My_Project/PL/MotionCtrl.xpr [current_project]
+set_property XPM_LIBRARIES {XPM_CDC XPM_FIFO XPM_MEMORY} [current_project]
 set_property default_lib xil_defaultlib [current_project]
 set_property target_language Verilog [current_project]
 set_property ip_output_repo d:/Data/FPGA/ZYNQ_XC7Z010_Practice/My_Project/PL/MotionCtrl.cache/ip [current_project]
@@ -79,6 +81,20 @@ OPTRACE "Adding files" START { }
 read_verilog -library xil_defaultlib D:/Data/FPGA/ZYNQ_XC7Z010_Practice/My_Project/PL/MotionCtrl.gen/sources_1/bd/zynq/hdl/zynq_wrapper.v
 add_files D:/Data/FPGA/ZYNQ_XC7Z010_Practice/My_Project/PL/MotionCtrl.srcs/sources_1/bd/zynq/zynq.bd
 set_property used_in_implementation false [get_files -all d:/Data/FPGA/ZYNQ_XC7Z010_Practice/My_Project/PL/MotionCtrl.gen/sources_1/bd/zynq/ip/zynq_processing_system7_0_0/zynq_processing_system7_0_0.xdc]
+set_property used_in_implementation false [get_files -all d:/Data/FPGA/ZYNQ_XC7Z010_Practice/My_Project/PL/MotionCtrl.gen/sources_1/bd/zynq/ip/zynq_axi_gpio_0_0/zynq_axi_gpio_0_0_board.xdc]
+set_property used_in_implementation false [get_files -all d:/Data/FPGA/ZYNQ_XC7Z010_Practice/My_Project/PL/MotionCtrl.gen/sources_1/bd/zynq/ip/zynq_axi_gpio_0_0/zynq_axi_gpio_0_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all d:/Data/FPGA/ZYNQ_XC7Z010_Practice/My_Project/PL/MotionCtrl.gen/sources_1/bd/zynq/ip/zynq_axi_smc_1/bd_0/ip/ip_1/bd_bc6a_psr_aclk_0_board.xdc]
+set_property used_in_implementation false [get_files -all d:/Data/FPGA/ZYNQ_XC7Z010_Practice/My_Project/PL/MotionCtrl.gen/sources_1/bd/zynq/ip/zynq_axi_smc_1/bd_0/ip/ip_5/bd_bc6a_s00a2s_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all d:/Data/FPGA/ZYNQ_XC7Z010_Practice/My_Project/PL/MotionCtrl.gen/sources_1/bd/zynq/ip/zynq_axi_smc_1/bd_0/ip/ip_6/bd_bc6a_sarn_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all d:/Data/FPGA/ZYNQ_XC7Z010_Practice/My_Project/PL/MotionCtrl.gen/sources_1/bd/zynq/ip/zynq_axi_smc_1/bd_0/ip/ip_7/bd_bc6a_srn_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all d:/Data/FPGA/ZYNQ_XC7Z010_Practice/My_Project/PL/MotionCtrl.gen/sources_1/bd/zynq/ip/zynq_axi_smc_1/bd_0/ip/ip_8/bd_bc6a_sawn_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all d:/Data/FPGA/ZYNQ_XC7Z010_Practice/My_Project/PL/MotionCtrl.gen/sources_1/bd/zynq/ip/zynq_axi_smc_1/bd_0/ip/ip_9/bd_bc6a_swn_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all d:/Data/FPGA/ZYNQ_XC7Z010_Practice/My_Project/PL/MotionCtrl.gen/sources_1/bd/zynq/ip/zynq_axi_smc_1/bd_0/ip/ip_10/bd_bc6a_sbn_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all d:/Data/FPGA/ZYNQ_XC7Z010_Practice/My_Project/PL/MotionCtrl.gen/sources_1/bd/zynq/ip/zynq_axi_smc_1/bd_0/ip/ip_11/bd_bc6a_m00s2a_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all d:/Data/FPGA/ZYNQ_XC7Z010_Practice/My_Project/PL/MotionCtrl.gen/sources_1/bd/zynq/ip/zynq_axi_smc_1/ooc.xdc]
+set_property used_in_implementation false [get_files -all d:/Data/FPGA/ZYNQ_XC7Z010_Practice/My_Project/PL/MotionCtrl.gen/sources_1/bd/zynq/ip/zynq_axi_smc_1/smartconnect.xdc]
+set_property used_in_implementation false [get_files -all d:/Data/FPGA/ZYNQ_XC7Z010_Practice/My_Project/PL/MotionCtrl.gen/sources_1/bd/zynq/ip/zynq_rst_ps7_0_50M_1/zynq_rst_ps7_0_50M_1_board.xdc]
+set_property used_in_implementation false [get_files -all d:/Data/FPGA/ZYNQ_XC7Z010_Practice/My_Project/PL/MotionCtrl.gen/sources_1/bd/zynq/ip/zynq_rst_ps7_0_50M_1/zynq_rst_ps7_0_50M_1_ooc.xdc]
 set_property used_in_implementation false [get_files -all d:/Data/FPGA/ZYNQ_XC7Z010_Practice/My_Project/PL/MotionCtrl.gen/sources_1/bd/zynq/zynq_ooc.xdc]
 
 OPTRACE "Adding files" END { }
@@ -96,6 +112,8 @@ set_property used_in_implementation false [get_files D:/Data/FPGA/ZYNQ_XC7Z010_P
 read_xdc dont_touch.xdc
 set_property used_in_implementation false [get_files dont_touch.xdc]
 set_param ips.enableIPCacheLiteLoad 1
+
+read_checkpoint -auto_incremental -incremental D:/Data/FPGA/ZYNQ_XC7Z010_Practice/My_Project/PL/MotionCtrl.srcs/utils_1/imports/synth_1/zynq_wrapper.dcp
 close [open __synthesis_is_running__ w]
 
 OPTRACE "synth_design" START { }
