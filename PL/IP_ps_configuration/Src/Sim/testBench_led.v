@@ -1,0 +1,22 @@
+`timescale 1ns/1ns
+
+module tb_counter();
+
+reg sys_clk;
+
+wire led_out;
+
+initial begin
+    sys_clk = 1'b1;
+end
+
+always #10 sys_clk = ~sys_clk;
+
+counter #(
+    .CNT_MAX(25'd24)
+)conter_inst(
+    .sys_clk(sys_clk),
+    .led_out(led_out)
+);
+
+endmodule

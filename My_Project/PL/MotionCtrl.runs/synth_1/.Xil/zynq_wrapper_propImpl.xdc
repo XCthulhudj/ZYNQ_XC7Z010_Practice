@@ -1,0 +1,7 @@
+set_property SRC_FILE_INFO {cfile:D:/Data/FPGA/ZYNQ_XC7Z010_Practice/My_Project/PL/MotionCtrl.srcs/constrs_1/new/zynq.xdc rfile:../../../MotionCtrl.srcs/constrs_1/new/zynq.xdc id:1} [current_design]
+set_property src_info {type:XDC file:1 line:2 export:INPUT save:INPUT read:READ} [current_design]
+set_property PACKAGE_PIN M20 [get_ports KEY_IN0]
+set_property src_info {type:XDC file:1 line:5 export:INPUT save:INPUT read:READ} [current_design]
+set_property PACKAGE_PIN J16 [get_ports PL_LED]
+set_property src_info {type:XDC file:1 line:8 export:INPUT save:INPUT read:READ} [current_design]
+set_property PACKAGE_PIN M19 [get_ports {GPIO_EMIO_KEY_tri_io[0]}]

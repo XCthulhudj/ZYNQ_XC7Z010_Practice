@@ -1,0 +1,13 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  --include "E:/Xilinx/2025.1.1/Vivado/data/rsb/busdef" --include "../../../../IP_ps_configuration.gen/sources_1/bd/zynq7/ipshared/ec67/hdl" --include "../../../../IP_ps_configuration.gen/sources_1/bd/zynq7/ipshared/6cfa/hdl" --include "E:/Xilinx/2025.1.1/Vivado/data/xilinx_vip/include" \
+"../../../../Src/led.v" \
+"../../../../IP_ps_configuration.ip_user_files/bd/zynq7/ip/zynq7_processing_system7_0_0/sim/zynq7_processing_system7_0_0.v" \
+"../../../../IP_ps_configuration.ip_user_files/bd/zynq7/ip/zynq7_counter_0_0/sim/zynq7_counter_0_0.v" \
+"../../../../IP_ps_configuration.ip_user_files/bd/zynq7/sim/zynq7.v" \
+"../../../../IP_ps_configuration.gen/sources_1/bd/zynq7/hdl/zynq7_wrapper.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort
