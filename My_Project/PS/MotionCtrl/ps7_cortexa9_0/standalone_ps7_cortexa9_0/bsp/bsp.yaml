@@ -150,6 +150,10 @@ include_folder: include
 lib_folder: lib
 libsrc_folder: libsrc
 drv_info:
+  axi_gpio_0:
+    driver: gpio
+    ip_name: axi_gpio
+    path: E:\Xilinx\2025.1.1\Vitis\data\embeddedsw\XilinxProcessorIPLib\drivers\gpio_v4_12
   ps7_afi_0: None
   ps7_afi_1: None
   ps7_afi_2: None

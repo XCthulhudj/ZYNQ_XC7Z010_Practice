@@ -4,6 +4,7 @@ addlib D:/Data/FPGA/ZYNQ_XC7Z010_Practice/My_Project/PS/MotionCtrl/zynq_fsbl/zyn
 addlib D:/Data/FPGA/ZYNQ_XC7Z010_Practice/My_Project/PS/MotionCtrl/zynq_fsbl/zynq_fsbl_bsp/libsrc/build_configs/gen_bsp/libsrc/scutimer/src/libscutimer.a
 addlib D:/Data/FPGA/ZYNQ_XC7Z010_Practice/My_Project/PS/MotionCtrl/zynq_fsbl/zynq_fsbl_bsp/libsrc/build_configs/gen_bsp/libsrc/scugic/src/libscugic.a
 addlib D:/Data/FPGA/ZYNQ_XC7Z010_Practice/My_Project/PS/MotionCtrl/zynq_fsbl/zynq_fsbl_bsp/libsrc/build_configs/gen_bsp/libsrc/gpiops/src/libgpiops.a
+addlib D:/Data/FPGA/ZYNQ_XC7Z010_Practice/My_Project/PS/MotionCtrl/zynq_fsbl/zynq_fsbl_bsp/libsrc/build_configs/gen_bsp/libsrc/gpio/src/libgpio.a
 addlib D:/Data/FPGA/ZYNQ_XC7Z010_Practice/My_Project/PS/MotionCtrl/zynq_fsbl/zynq_fsbl_bsp/libsrc/build_configs/gen_bsp/libsrc/dmaps/src/libdmaps.a
 addlib D:/Data/FPGA/ZYNQ_XC7Z010_Practice/My_Project/PS/MotionCtrl/zynq_fsbl/zynq_fsbl_bsp/libsrc/build_configs/gen_bsp/libsrc/devcfg/src/libdevcfg.a
 addlib D:/Data/FPGA/ZYNQ_XC7Z010_Practice/My_Project/PS/MotionCtrl/zynq_fsbl/zynq_fsbl_bsp/libsrc/build_configs/gen_bsp/libsrc/coresightps_dcc/src/libcoresightps_dcc.a

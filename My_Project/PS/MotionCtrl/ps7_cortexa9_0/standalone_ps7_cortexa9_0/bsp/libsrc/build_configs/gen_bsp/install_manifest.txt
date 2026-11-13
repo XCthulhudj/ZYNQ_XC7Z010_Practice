@@ -16,8 +16,11 @@ D:/Data/FPGA/ZYNQ_XC7Z010_Practice/My_Project/PS/MotionCtrl/ps7_cortexa9_0/stand
 D:/Data/FPGA/ZYNQ_XC7Z010_Practice/My_Project/PS/MotionCtrl/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/include/../include/xdmaps_hw.h
 D:/Data/FPGA/ZYNQ_XC7Z010_Practice/My_Project/PS/MotionCtrl/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/include/../include/xenv.h
 D:/Data/FPGA/ZYNQ_XC7Z010_Practice/My_Project/PS/MotionCtrl/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/include/../include/xenv_standalone.h
+D:/Data/FPGA/ZYNQ_XC7Z010_Practice/My_Project/PS/MotionCtrl/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/include/../include/xgpio.h
 D:/Data/FPGA/ZYNQ_XC7Z010_Practice/My_Project/PS/MotionCtrl/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/include/../include/xgpiops.h
 D:/Data/FPGA/ZYNQ_XC7Z010_Practice/My_Project/PS/MotionCtrl/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/include/../include/xgpiops_hw.h
+D:/Data/FPGA/ZYNQ_XC7Z010_Practice/My_Project/PS/MotionCtrl/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/include/../include/xgpio_i.h
+D:/Data/FPGA/ZYNQ_XC7Z010_Practice/My_Project/PS/MotionCtrl/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/include/../include/xgpio_l.h
 D:/Data/FPGA/ZYNQ_XC7Z010_Practice/My_Project/PS/MotionCtrl/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/include/../include/xiltimer.h
 D:/Data/FPGA/ZYNQ_XC7Z010_Practice/My_Project/PS/MotionCtrl/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/include/../include/xil_assert.h
 D:/Data/FPGA/ZYNQ_XC7Z010_Practice/My_Project/PS/MotionCtrl/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/include/../include/xil_cache.h
@@ -77,8 +80,11 @@ D:/Data/FPGA/ZYNQ_XC7Z010_Practice/My_Project/PS/MotionCtrl/ps7_cortexa9_0/stand
 D:/Data/FPGA/ZYNQ_XC7Z010_Practice/My_Project/PS/MotionCtrl/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/include/../include/xdmaps_hw.h
 D:/Data/FPGA/ZYNQ_XC7Z010_Practice/My_Project/PS/MotionCtrl/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/include/../include/xenv.h
 D:/Data/FPGA/ZYNQ_XC7Z010_Practice/My_Project/PS/MotionCtrl/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/include/../include/xenv_standalone.h
+D:/Data/FPGA/ZYNQ_XC7Z010_Practice/My_Project/PS/MotionCtrl/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/include/../include/xgpio.h
 D:/Data/FPGA/ZYNQ_XC7Z010_Practice/My_Project/PS/MotionCtrl/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/include/../include/xgpiops.h
 D:/Data/FPGA/ZYNQ_XC7Z010_Practice/My_Project/PS/MotionCtrl/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/include/../include/xgpiops_hw.h
+D:/Data/FPGA/ZYNQ_XC7Z010_Practice/My_Project/PS/MotionCtrl/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/include/../include/xgpio_i.h
+D:/Data/FPGA/ZYNQ_XC7Z010_Practice/My_Project/PS/MotionCtrl/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/include/../include/xgpio_l.h
 D:/Data/FPGA/ZYNQ_XC7Z010_Practice/My_Project/PS/MotionCtrl/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/include/../include/xiltimer.h
 D:/Data/FPGA/ZYNQ_XC7Z010_Practice/My_Project/PS/MotionCtrl/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/include/../include/xil_assert.h
 D:/Data/FPGA/ZYNQ_XC7Z010_Practice/My_Project/PS/MotionCtrl/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/include/../include/xil_cache.h
@@ -138,8 +144,11 @@ D:/Data/FPGA/ZYNQ_XC7Z010_Practice/My_Project/PS/MotionCtrl/ps7_cortexa9_0/stand
 D:/Data/FPGA/ZYNQ_XC7Z010_Practice/My_Project/PS/MotionCtrl/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/include/../include/xdmaps_hw.h
 D:/Data/FPGA/ZYNQ_XC7Z010_Practice/My_Project/PS/MotionCtrl/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/include/../include/xenv.h
 D:/Data/FPGA/ZYNQ_XC7Z010_Practice/My_Project/PS/MotionCtrl/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/include/../include/xenv_standalone.h
+D:/Data/FPGA/ZYNQ_XC7Z010_Practice/My_Project/PS/MotionCtrl/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/include/../include/xgpio.h
 D:/Data/FPGA/ZYNQ_XC7Z010_Practice/My_Project/PS/MotionCtrl/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/include/../include/xgpiops.h
 D:/Data/FPGA/ZYNQ_XC7Z010_Practice/My_Project/PS/MotionCtrl/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/include/../include/xgpiops_hw.h
+D:/Data/FPGA/ZYNQ_XC7Z010_Practice/My_Project/PS/MotionCtrl/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/include/../include/xgpio_i.h
+D:/Data/FPGA/ZYNQ_XC7Z010_Practice/My_Project/PS/MotionCtrl/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/include/../include/xgpio_l.h
 D:/Data/FPGA/ZYNQ_XC7Z010_Practice/My_Project/PS/MotionCtrl/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/include/../include/xiltimer.h
 D:/Data/FPGA/ZYNQ_XC7Z010_Practice/My_Project/PS/MotionCtrl/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/include/../include/xil_assert.h
 D:/Data/FPGA/ZYNQ_XC7Z010_Practice/My_Project/PS/MotionCtrl/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/include/../include/xil_cache.h

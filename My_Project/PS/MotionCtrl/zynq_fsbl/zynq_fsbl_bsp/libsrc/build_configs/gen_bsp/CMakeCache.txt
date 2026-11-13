@@ -381,6 +381,15 @@ dmaps_IS_TOP_LEVEL:STATIC=OFF
 dmaps_SOURCE_DIR:STATIC=D:/Data/FPGA/ZYNQ_XC7Z010_Practice/My_Project/PS/MotionCtrl/zynq_fsbl/zynq_fsbl_bsp/libsrc/dmaps/src
 
 //Value Computed by CMake
+gpio_BINARY_DIR:STATIC=D:/Data/FPGA/ZYNQ_XC7Z010_Practice/My_Project/PS/MotionCtrl/zynq_fsbl/zynq_fsbl_bsp/libsrc/build_configs/gen_bsp/libsrc/gpio/src
+
+//Value Computed by CMake
+gpio_IS_TOP_LEVEL:STATIC=OFF
+
+//Value Computed by CMake
+gpio_SOURCE_DIR:STATIC=D:/Data/FPGA/ZYNQ_XC7Z010_Practice/My_Project/PS/MotionCtrl/zynq_fsbl/zynq_fsbl_bsp/libsrc/gpio/src
+
+//Value Computed by CMake
 gpiops_BINARY_DIR:STATIC=D:/Data/FPGA/ZYNQ_XC7Z010_Practice/My_Project/PS/MotionCtrl/zynq_fsbl/zynq_fsbl_bsp/libsrc/build_configs/gen_bsp/libsrc/gpiops/src
 
 //Value Computed by CMake
@@ -630,7 +639,7 @@ CMAKE_MODULE_LINKER_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_NM
 CMAKE_NM-ADVANCED:INTERNAL=1
 //number of local generators
-CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=25
+CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=26
 //ADVANCED property for variable: CMAKE_OBJCOPY
 CMAKE_OBJCOPY-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_OBJDUMP
