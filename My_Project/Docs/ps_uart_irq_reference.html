@@ -1,0 +1,363 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<title>Zynq-7000 PS UART 中断速查手册</title>
+<style>
+@page { size: A4; margin: 16mm 15mm 14mm; }
+* { box-sizing: border-box; }
+html, body { margin: 0; padding: 0; }
+body {
+  color: #1b2433; background: #fff;
+  font-family: "Microsoft YaHei UI", "Microsoft YaHei", "Segoe UI", sans-serif;
+  font-size: 13.2px; line-height: 1.75;
+  -webkit-print-color-adjust: exact; print-color-adjust: exact;
+}
+@media screen {
+  html { background: #e9edf3; }
+  body { width: 690px; margin: 26px auto 40px; background: #fff;
+         padding: 30px 34px 40px; box-shadow: 0 8px 30px rgba(20,32,60,.14);
+         border-radius: 6px; }
+}
+
+.cover { border-left: 4px solid #1f6feb; padding: 1px 0 1px 14px; margin: 0 0 16px; }
+.cover .kicker { font-size: 10.6px; letter-spacing: 2.2px; color: #1f6feb; font-weight: 700; }
+.cover h1 { font-size: 26px; line-height: 1.3; margin: 6px 0 4px; letter-spacing: .5px; }
+.cover .lead { margin: 0; color: #5b6675; font-size: 12.4px; }
+.chips { margin-top: 10px; }
+.chip { display: inline-block; font: 600 10.4px/16px Consolas, monospace;
+        color: #25406b; background: #eef3fb; border: 1px solid #d7e2f3;
+        border-radius: 999px; padding: 2px 9px; margin: 0 6px 4px 0; }
+
+.toc { background: #f6f8fb; border: 1px solid #e3e9f1; border-radius: 8px;
+       padding: 9px 16px 7px; font-size: 12.3px; color: #40506a; margin-bottom: 4px; }
+.toc b { color: #1b2433; }
+.toc span { color: #1f6feb; font-weight: 700; margin-right: 4px; }
+.toc .dot { color: #b9c3d2; margin: 0 6px; }
+
+h2 { font-size: 15.4px; margin: 20px 0 9px; padding-bottom: 5px;
+     border-bottom: 2px solid #e8edf4; page-break-after: avoid; }
+h2 .n { display: inline-block; width: 20px; height: 20px; line-height: 20px;
+        text-align: center; background: #1f6feb; color: #fff; border-radius: 5px;
+        font-size: 11.5px; margin-right: 8px; vertical-align: 1px; }
+h3 { font-size: 13.2px; margin: 13px 0 5px; color: #22304a; page-break-after: avoid; }
+
+p { margin: 6px 0; }
+p code, li code, td code, .toc code {
+  background: #f1f4f9; border: 1px solid #e3e9f1; border-radius: 4px;
+  padding: 0 3px; font: 600 11.5px Consolas, monospace; color: #1d4ed8; }
+
+table { width: 100%; border-collapse: collapse; margin: 8px 0 12px;
+        font-size: 12.3px; page-break-inside: avoid; }
+th { background: #eef2f8; color: #22304a; text-align: left; font-weight: 600; }
+th, td { border: 1px solid #dde4ee; padding: 4px 8px; vertical-align: top; }
+tr:nth-child(even) td { background: #fafbfd; }
+td.c { text-align: center; white-space: nowrap; }
+td.fn { white-space: nowrap; }
+
+pre { background: #f7f9fc; border: 1px solid #e3e9f1; border-left: 3px solid #9db4d8;
+      border-radius: 6px; padding: 8px 12px; margin: 8px 0 12px;
+      font: 12.1px/1.62 Consolas, "Cascadia Mono", monospace; color: #1f2937;
+      white-space: pre-wrap; page-break-inside: avoid; }
+pre .cm { color: #6b7a90; }
+
+.note, .warn, .tip { border-radius: 8px; padding: 8px 14px; margin: 10px 0 12px;
+                     font-size: 12.3px; page-break-inside: avoid; }
+.note { background: #eef4ff; border: 1px solid #d6e4ff; border-left: 3px solid #1f6feb; }
+.warn { background: #fff8ec; border: 1px solid #f3e3c3; border-left: 3px solid #d9822b; }
+.tip  { background: #eefaf3; border: 1px solid #cfeedd; border-left: 3px solid #12a05c; }
+.note b, .warn b, .tip b { margin-right: 5px; }
+
+ol.steps { list-style: none; margin: 9px 0 10px; padding: 0; }
+ol.steps li { position: relative; padding: 4px 0 4px 34px; font-size: 12.6px; }
+ol.steps li::before { content: attr(data-n); position: absolute; left: 0; top: 4px;
+  width: 21px; height: 21px; border-radius: 50%; background: #1f6feb; color: #fff;
+  text-align: center; font: 700 11px/21px Consolas, monospace; }
+ol.steps li b { color: #1b2433; }
+
+.chain { margin: 10px 0 12px; font-size: 12.2px; line-height: 2.1; }
+.chain span.st { white-space: nowrap; }
+.chain span.box { display: inline-block; background: #f1f5fb; border: 1px solid #d7e2f3;
+  border-radius: 6px; padding: 2px 9px; color: #25406b; margin: 2px 0; }
+.chain span.ar { color: #9db4d8; margin: 0 5px; font-weight: 700; }
+
+.foot { margin-top: 20px; padding-top: 8px; border-top: 1px solid #e8edf4;
+        font-size: 11.2px; color: #8b96a6; }
+</style>
+</head>
+<body>
+
+<div class="cover">
+  <div class="kicker">ZYNQ-7000 · XC7Z010 · VITIS 2025.1</div>
+  <h1>PS UART 中断速查手册</h1>
+  <p class="lead">UART 初始化 · GIC · 异常向量 · 中断源使能 · 中断服务函数 · 数据收发</p>
+  <div class="chips">
+    <span class="chip">driver: uartps v3.16</span>
+    <span class="chip">standalone (SDT)</span>
+    <span class="chip">Cortex-A9 · GIC PL390</span>
+  </div>
+</div>
+
+<div class="toc">
+  <b>本文结构</b><br>
+  <span>一</span>UART 初始化<span class="dot">·</span>
+  <span>二</span>GIC 中断控制器<span class="dot">·</span>
+  <span>三</span>CPU 异常与中断注册<span class="dot">·</span>
+  <span>四</span>UART 中断相关宏<span class="dot">·</span>
+  <span>五</span>UART 寄存器操作<span class="dot">·</span>
+  <span>六</span>中断服务函数中的收发<span class="dot">·</span>
+  <span>七</span>完整中断流程<span class="dot">·</span>
+  <span>八</span>最值得记住的函数<span class="dot">·</span>
+  <span>九</span>一处值得改进的地方<span class="dot">·</span>
+  <span>附</span>校对说明
+</div>
+
+<h2><span class="n">一</span>串口 UART 初始化函数</h2>
+<p>头文件：<code>#include "xuartps.h"</code></p>
+
+<table>
+  <tr><th style="width:38%">函数</th><th>作用</th><th style="width:26%">备注</th></tr>
+  <tr><td class="fn"><code>XUartPs_LookupConfig()</code></td><td>获取 UART 配置信息</td><td>SDT BSP 传的是<b>基地址</b></td></tr>
+  <tr><td class="fn"><code>XUartPs_CfgInitialize()</code></td><td>初始化 UART 驱动实例</td><td>传 Config + BaseAddress</td></tr>
+  <tr><td class="fn"><code>XUartPs_SelfTest()</code></td><td>UART 自检</td><td>可选，学习阶段可跳过</td></tr>
+  <tr><td class="fn"><code>XUartPs_SetOperMode()</code></td><td>设置工作模式</td><td>常驻 <code>XUARTPS_OPER_MODE_NORMAL</code></td></tr>
+  <tr><td class="fn"><code>XUartPs_SetBaudRate()</code></td><td>设置波特率</td><td>返回 <code>s32</code>，0 表示成功</td></tr>
+  <tr><td class="fn"><code>XUartPs_SetFifoThreshold()</code></td><td>设置接收 FIFO 触发阈值</td><td>决定 <code>RXOVR</code> 何时触发</td></tr>
+  <tr><td class="fn"><code>XUartPs_SetInterruptMask()</code></td><td>设置中断屏蔽寄存器（IER/IDR）</td><td>使能 / 关闭中断源</td></tr>
+</table>
+
+<p>常见初始化流程：</p>
+<pre>UartConfig = XUartPs_LookupConfig(UART_ID);
+
+XUartPs_CfgInitialize(&amp;UartInstance, UartConfig, UartConfig-&gt;BaseAddress);
+
+XUartPs_SetOperMode(&amp;UartInstance, XUARTPS_OPER_MODE_NORMAL);
+XUartPs_SetBaudRate(&amp;UartInstance, 115200);
+XUartPs_SetFifoThreshold(&amp;UartInstance, 1);</pre>
+
+<div class="note"><b>注意</b>Vitis 2025.1 的 <b>SDT</b> BSP 里，<code>XUartPs_LookupConfig()</code> 的参数是
+<b>基地址</b>（如 <code>XPAR_XUARTPS_0_BASEADDR</code>），不是 <code>DEVICE_ID</code>。
+沿用时请注意和自己 BSP 的版本对齐。</div>
+
+<h2><span class="n">二</span>GIC 中断控制器函数</h2>
+<p>头文件：<code>#include "xscugic.h"</code>。GIC 负责把 CPU 收到的各种中断请求汇总、判优、分发。</p>
+
+<table>
+  <tr><th style="width:44%">函数</th><th>作用</th></tr>
+  <tr><td class="fn"><code>XScuGic_LookupConfig()</code></td><td>获取 GIC 配置信息</td></tr>
+  <tr><td class="fn"><code>XScuGic_CfgInitialize()</code></td><td>初始化 GIC</td></tr>
+  <tr><td class="fn"><code>XScuGic_Connect()</code></td><td>将中断 ID 与中断服务函数绑定</td></tr>
+  <tr><td class="fn"><code>XScuGic_Enable()</code></td><td>使能指定中断（允许转发到 CPU）</td></tr>
+  <tr><td class="fn"><code>XScuGic_Disable()</code></td><td>禁止指定中断</td></tr>
+  <tr><td class="fn"><code>XScuGic_Disconnect()</code></td><td>解除中断服务函数绑定</td></tr>
+  <tr><td class="fn"><code>XScuGic_SetPriorityTriggerType()</code></td><td>设置中断优先级和触发类型</td></tr>
+</table>
+
+<pre>GicConfig = XScuGic_LookupConfig(INTC_ID);
+
+XScuGic_CfgInitialize(&amp;GicInstance, GicConfig, GicConfig-&gt;CpuBaseAddress);</pre>
+
+<h2><span class="n">三</span>CPU 异常与中断注册函数</h2>
+<p>头文件：<code>#include "xil_exception.h"</code></p>
+
+<table>
+  <tr><th style="width:44%">函数</th><th>作用</th></tr>
+  <tr><td class="fn"><code>Xil_ExceptionInit()</code></td><td>初始化异常处理机制</td></tr>
+  <tr><td class="fn"><code>Xil_ExceptionRegisterHandler()</code></td><td>注册 CPU 异常处理函数</td></tr>
+  <tr><td class="fn"><code>Xil_ExceptionEnable()</code></td><td>开启 CPU 全局异常响应（IRQ）</td></tr>
+  <tr><td class="fn"><code>Xil_ExceptionDisable()</code></td><td>关闭 CPU 全局异常响应</td></tr>
+</table>
+
+<pre>Xil_ExceptionInit();
+
+Xil_ExceptionRegisterHandler(XIL_EXCEPTION_ID_INT,
+                             (Xil_ExceptionHandler)XScuGic_InterruptHandler,
+                             &amp;GicInstance);
+
+Xil_ExceptionEnable();</pre>
+
+<div class="note"><b>两个 handler 别混了</b>
+<code>XScuGic_InterruptHandler</code> 是 GIC 提供的<b>通用分发函数</b>，挂在 CPU 异常向量上；
+<code>uart_intr_handler</code> 是你自己写的 <b>UART 中断服务函数</b>，由
+<code>XScuGic_Connect()</code> 挂到具体的中断号上。</div>
+
+<h2><span class="n">四</span>UART 中断相关宏</h2>
+<p>主要来自 <code>#include "xuartps.h"</code>（实现在 <code>xuartps_hw.h</code>）。</p>
+
+<table>
+  <tr><th style="width:30%">宏</th><th class="c" style="width:10%">位</th><th class="c" style="width:14%">值</th><th>含义</th></tr>
+  <tr><td class="fn"><code>XUARTPS_IXR_RXOVR</code></td><td class="c">0</td><td class="c">0x0001</td><td>接收 FIFO 达到触发阈值</td></tr>
+  <tr><td class="fn"><code>XUARTPS_IXR_RXEMPTY</code></td><td class="c">1</td><td class="c">0x0002</td><td>接收 FIFO 空</td></tr>
+  <tr><td class="fn"><code>XUARTPS_IXR_RXFULL</code></td><td class="c">2</td><td class="c">0x0004</td><td>接收 FIFO 满</td></tr>
+  <tr><td class="fn"><code>XUARTPS_IXR_TXEMPTY</code></td><td class="c">3</td><td class="c">0x0008</td><td>发送 FIFO 空</td></tr>
+  <tr><td class="fn"><code>XUARTPS_IXR_TXFULL</code></td><td class="c">4</td><td class="c">0x0010</td><td>发送 FIFO 满</td></tr>
+  <tr><td class="fn"><code>XUARTPS_IXR_OVER</code></td><td class="c">5</td><td class="c">0x0020</td><td>接收 FIFO 溢出<b>错误</b></td></tr>
+  <tr><td class="fn"><code>XUARTPS_IXR_FRAMING</code></td><td class="c">6</td><td class="c">0x0040</td><td>帧错误</td></tr>
+  <tr><td class="fn"><code>XUARTPS_IXR_PARITY</code></td><td class="c">7</td><td class="c">0x0080</td><td>奇偶校验错误</td></tr>
+  <tr><td class="fn"><code>XUARTPS_IXR_TOUT</code></td><td class="c">8</td><td class="c">0x0100</td><td>接收超时</td></tr>
+  <tr><td class="fn"><code>XUARTPS_IXR_DMS</code></td><td class="c">9</td><td class="c">0x0200</td><td>Modem 状态变化</td></tr>
+  <tr><td class="fn"><code>XUARTPS_IXR_TTRIG</code></td><td class="c">10</td><td class="c">0x0400</td><td>发送 FIFO 触发</td></tr>
+  <tr><td class="fn"><code>XUARTPS_IXR_TNFUL</code></td><td class="c">11</td><td class="c">0x0800</td><td>发送 FIFO 接近满</td></tr>
+  <tr><td class="fn"><code>XUARTPS_IXR_TOVR</code></td><td class="c">12</td><td class="c">0x1000</td><td>发送 FIFO 溢出</td></tr>
+  <tr><td class="fn"><code>XUARTPS_IXR_RBRK</code></td><td class="c">13</td><td class="c">0x2000</td><td>接收线路 Break 检测</td></tr>
+</table>
+
+<p>常用的接收中断使能：</p>
+<pre>XUartPs_SetInterruptMask(&amp;UartInstance, XUARTPS_IXR_RXOVR);</pre>
+
+<div class="warn"><b>易误解</b><code>XUARTPS_IXR_RXOVR</code> 不是"接收数据溢出错误"，
+而是<b>接收 FIFO 触发阈值</b>中断（fill level ≥ 阈值就报）；真正表示接收溢出错误的是
+<code>XUARTPS_IXR_OVER</code>（0x0020）。</div>
+
+<p>工作模式宏（<code>XUartPs_SetOperMode()</code> 用）：</p>
+<table>
+  <tr><th style="width:46%">宏</th><th class="c" style="width:12%">值</th><th>含义</th></tr>
+  <tr><td class="fn"><code>XUARTPS_OPER_MODE_NORMAL</code></td><td class="c">0x00</td><td>正常收发</td></tr>
+  <tr><td class="fn"><code>XUARTPS_OPER_MODE_AUTO_ECHO</code></td><td class="c">0x01</td><td>自动回显</td></tr>
+  <tr><td class="fn"><code>XUARTPS_OPER_MODE_LOCAL_LOOP</code></td><td class="c">0x02</td><td>本地自环（不发到引脚）</td></tr>
+  <tr><td class="fn"><code>XUARTPS_OPER_MODE_REMOTE_LOOP</code></td><td class="c">0x03</td><td>远端自环（经 IO 收发）</td></tr>
+</table>
+
+<h2><span class="n">五</span>UART 寄存器操作宏</h2>
+<p>偏移量定义在 <code>xuartps_hw.h</code>，读写用 <code>XUartPs_ReadReg()</code> /
+<code>XUartPs_WriteReg()</code> 这两个宏（<code>BaseAddress</code>，不是实例指针）。</p>
+
+<table>
+  <tr><th style="width:44%">宏</th><th class="c" style="width:14%">偏移</th><th>含义</th></tr>
+  <tr><td class="fn"><code>XUARTPS_IER_OFFSET</code></td><td class="c">0x08</td><td>中断使能寄存器（写 1 使能）</td></tr>
+  <tr><td class="fn"><code>XUARTPS_IDR_OFFSET</code></td><td class="c">0x0C</td><td>中断禁止寄存器（写 1 禁止）</td></tr>
+  <tr><td class="fn"><code>XUARTPS_IMR_OFFSET</code></td><td class="c">0x10</td><td>中断屏蔽寄存器（读回当前使能）</td></tr>
+  <tr><td class="fn"><code>XUARTPS_ISR_OFFSET</code></td><td class="c">0x14</td><td>中断状态寄存器（写 1 清除）</td></tr>
+  <tr><td class="fn"><code>XUARTPS_SR_OFFSET</code></td><td class="c">0x2C</td><td>通道状态寄存器（RXEMPTY / TXFULL 等）</td></tr>
+</table>
+
+<pre>XUartPs_ReadReg(BaseAddress, RegisterOffset);
+XUartPs_WriteReg(BaseAddress, RegisterOffset, RegisterValue);</pre>
+
+<p>例如读状态寄存器：</p>
+<pre>u32 status;
+
+status = XUartPs_ReadReg(UartInstance.Config.BaseAddress, XUARTPS_SR_OFFSET);</pre>
+
+<h2><span class="n">六</span>中断服务函数中的收发函数</h2>
+
+<table>
+  <tr><th style="width:34%">函数</th><th>作用</th><th style="width:26%">参数</th></tr>
+  <tr><td class="fn"><code>XUartPs_RecvByte()</code></td><td>接收一个字节</td><td>基地址</td></tr>
+  <tr><td class="fn"><code>XUartPs_SendByte()</code></td><td>发送一个字节</td><td>基地址 + 数据</td></tr>
+  <tr><td class="fn"><code>XUartPs_Recv()</code></td><td>接收多个字节（驱动缓冲 + 中断驱动）</td><td>实例指针</td></tr>
+  <tr><td class="fn"><code>XUartPs_Send()</code></td><td>发送多个字节（驱动缓冲 + 中断驱动）</td><td>实例指针</td></tr>
+  <tr><td class="fn"><code>XUartPs_GetInterruptMask()</code></td><td>获取当前中断屏蔽配置</td><td>实例指针</td></tr>
+</table>
+
+<pre>u8 data;
+
+data = XUartPs_RecvByte(UART_BASEADDR);
+XUartPs_SendByte(UART_BASEADDR, data);</pre>
+
+<div class="note"><b>两套 API 的区别</b>
+<code>RecvByte()/SendByte()</code> 是硬件层单字节操作，收 <b>BaseAddress</b>，在自写 ISR 里最直接；
+<code>Recv()/Send()</code> 是驱动层带缓冲的批量收发，收 <b>实例指针</b>，需要配合驱动自带中断分发
+（<code>XUartPs_SetRecvHandler()</code> / <code>XUartPs_SetSendHandler()</code> +
+<code>XUartPs_InterruptHandler</code>）才工作。学习阶段建议先用前者。</div>
+
+<h2><span class="n">七</span>完整的中断处理流程</h2>
+
+<ol class="steps">
+  <li data-n="1"><b>UART 初始化</b>　LookupConfig / CfgInitialize / SetBaudRate / SetFifoThreshold</li>
+  <li data-n="2"><b>GIC 初始化</b>　XScuGic_LookupConfig / XScuGic_CfgInitialize</li>
+  <li data-n="3"><b>CPU 异常初始化</b>　Xil_ExceptionInit / RegisterHandler / Enable</li>
+  <li data-n="4"><b>注册 UART 中断服务函数</b>　XScuGic_Connect(UART_INTR_ID, uart_intr_handler, …)</li>
+  <li data-n="5"><b>使能中断</b>　XUartPs_SetInterruptMask(RXOVR) + XScuGic_Enable(UART_INTR_ID)</li>
+  <li data-n="6"><b>UART 收到数据 → 产生中断</b>　UART 置 ISR → GIC 判优 → CPU 进入 IRQ</li>
+  <li data-n="7"><b>执行 uart_intr_handler()</b>　读状态 → 取数据 → 清中断 → 处理数据</li>
+</ol>
+
+<div class="chain">
+  <span class="st"><span class="box">RX FIFO 达阈值</span><span class="ar">→</span></span>
+  <span class="st"><span class="box">UART ISR bit0</span><span class="ar">→</span></span>
+  <span class="st"><span class="box">GIC 转发 IRQ</span><span class="ar">→</span></span>
+  <span class="st"><span class="box">XScuGic_InterruptHandler</span><span class="ar">→</span></span>
+  <span class="st"><span class="box">uart_intr_handler</span><span class="ar">→</span></span>
+  <span class="st"><span class="box">读 FIFO / 清 ISR</span></span>
+</div>
+
+<p>ISR 里清中断的写法（Zynq UART 的 ISR 是 <b>写 1 清除</b>）：</p>
+<pre>u32 isr = XUartPs_ReadReg(UART_BASEADDR, XUARTPS_ISR_OFFSET);
+
+XUartPs_WriteReg(UART_BASEADDR, XUARTPS_ISR_OFFSET, isr);   <span class="cm">/* 写 1 清对应位 */</span></pre>
+
+<h2><span class="n">八</span>最值得记住的函数清单</h2>
+<p>学中断机制时，按这个顺序掌握即可打通链路：</p>
+
+<table>
+  <tr><th class="c" style="width:12%">优先级</th><th style="width:42%">函数</th><th>核心作用</th></tr>
+  <tr><td class="c">1</td><td class="fn"><code>XScuGic_CfgInitialize()</code></td><td>初始化 GIC</td></tr>
+  <tr><td class="c">2</td><td class="fn"><code>Xil_ExceptionRegisterHandler()</code></td><td>注册 CPU 中断分发函数</td></tr>
+  <tr><td class="c">3</td><td class="fn"><code>XScuGic_Connect()</code></td><td>注册具体中断服务函数</td></tr>
+  <tr><td class="c">4</td><td class="fn"><code>XScuGic_Enable()</code></td><td>使能 GIC 中断</td></tr>
+  <tr><td class="c">5</td><td class="fn"><code>XUartPs_SetInterruptMask()</code></td><td>使能 UART 中断源</td></tr>
+  <tr><td class="c">6</td><td class="fn"><code>XUartPs_RecvByte()</code></td><td>接收数据</td></tr>
+  <tr><td class="c">7</td><td class="fn"><code>XUartPs_SendByte()</code></td><td>发送数据</td></tr>
+  <tr><td class="c">8</td><td class="fn"><code>XUartPs_ReadReg()</code></td><td>读 UART 寄存器</td></tr>
+  <tr><td class="c">9</td><td class="fn"><code>XUartPs_WriteReg()</code></td><td>写 UART 寄存器</td></tr>
+</table>
+
+<div class="warn"><b>两个"使能"必须都做</b>
+<code>XUartPs_SetInterruptMask()</code> 只是让 <b>UART 外设</b>产生中断请求；
+<code>XScuGic_Enable()</code> 才是让 <b>GIC</b> 把该中断转发给 CPU。
+少任何一个，中断链路都不通——排查"进不去 ISR"时先看这两处。</div>
+
+<h2><span class="n">九</span>一处值得改进的地方</h2>
+<p>原来的写法里，<code>XUartPs_RecvByte()</code> 一次只取一个字节。如果一次收到多字节
+（比如机械臂主从控制的命令帧），剩下的字节还留在 FIFO 里，处理效率低、也容易被后续数据挤掉。
+建议在 ISR 里<b>循环读到 FIFO 空</b>，再统一处理：</p>
+
+<pre>static void uart_intr_handler(void *arg)
+{
+    XUartPs *uart = (XUartPs *)arg;
+    u32 base = uart-&gt;Config.BaseAddress;
+    u32 isr  = XUartPs_ReadReg(base, XUARTPS_ISR_OFFSET);
+
+    if (isr &amp; XUARTPS_IXR_RXOVR) {
+        <span class="cm">/* 循环读空 RX FIFO，一次把所有字节取走 */</span>
+        while ((XUartPs_ReadReg(base, XUARTPS_SR_OFFSET) &amp;
+                XUARTPS_SR_RXEMPTY) == 0U) {
+            if (rx_len &lt; sizeof(rx_buf)) {
+                rx_buf[rx_len++] = XUartPs_RecvByte(base);
+            } else {
+                (void)XUartPs_RecvByte(base);      <span class="cm">/* 溢出保护：丢弃 */</span>
+            }
+        }
+        frame_ready = 1;                            <span class="cm">/* 交给 main 解析 */</span>
+        XUartPs_WriteReg(base, XUARTPS_ISR_OFFSET, XUARTPS_IXR_RXOVR);
+    }
+}</pre>
+
+<div class="tip"><b>补充</b>把阈值设成 1（<code>XUartPs_SetFifoThreshold(&amp;uart, 1)</code>）时，每来一个字节就进一次
+中断，循环体通常只跑一轮；等以后把阈值调大（如 16）做批量传输，这段循环就能显著减少中断次数。</div>
+
+<h2><span class="n">附</span>校对说明（对照 uartps v3.16 源码）</h2>
+<table>
+  <tr><th style="width:34%">原清单中的写法</th><th>uartps v3.16 里的实际情况</th></tr>
+  <tr><td class="fn"><code>XUARTPS_IXR_MODEM</code></td>
+      <td>不存在这个宏；对应的是 <code>XUARTPS_IXR_DMS</code>（0x0200，Modem 状态变化）</td></tr>
+  <tr><td class="fn"><code>XUARTPS_IXR_TXOVR</code></td>
+      <td>应为 <code>XUARTPS_IXR_TOVR</code>（0x1000）；"接收溢出错误"是 <code>XUARTPS_IXR_OVER</code>（0x0020）</td></tr>
+  <tr><td class="fn"><code>XUARTPS_IXR_RXEMPTY</code></td>
+      <td>有效位（0x0002），但含义是"RX FIFO 空"，一般不单独使能它做数据接收</td></tr>
+  <tr><td class="fn"><code>XUARTPS_IXR_RXOVR</code></td>
+      <td>确认是 RX FIFO <b>触发</b>中断，不是溢出——原文这一点是对的</td></tr>
+</table>
+<p>另外：有效中断位掩码是 <code>XUARTPS_IXR_MASK</code>（0x3FFF，bit0~13）；
+<code>XScuGic_Connect()</code> 里 UART 的中断号来自 <code>xparameters_ps.h</code>：
+<code>XPAR_XUARTPS_0_INTR</code> = <code>XPS_UART0_INT_ID</code> = <b>59</b>（基地址 0xE000_0000），
+<code>XPAR_XUARTPS_1_INTR</code> = <code>XPS_UART1_INT_ID</code> = <b>82</b>（基地址 0xE000_1000）。</p>
+
+<div class="foot">
+  依据：Vitis 2025.1 · standalone (SDT) BSP · <code>uartps_v3_16</code> 与 <code>xscugic</code> 驱动头文件；
+  中断 ID 取自 <code>xparameters_ps.h</code>。示例代码为教学用最小实现，未包含去抖 / 帧解析 / 错误统计。
+</div>
+
+</body>
+</html>

@@ -73,6 +73,13 @@ D:/Data/FPGA/ZYNQ_XC7Z010_Practice/My_Project/PS/MotionCtrl/zynq_fsbl/zynq_fsbl_
 D:/Data/FPGA/ZYNQ_XC7Z010_Practice/My_Project/PS/MotionCtrl/zynq_fsbl/zynq_fsbl_bsp/libsrc/build_configs/gen_bsp/libsrc/scuwdt/src/CMakeFiles/install.dir
 D:/Data/FPGA/ZYNQ_XC7Z010_Practice/My_Project/PS/MotionCtrl/zynq_fsbl/zynq_fsbl_bsp/libsrc/build_configs/gen_bsp/libsrc/scuwdt/src/CMakeFiles/install/local.dir
 D:/Data/FPGA/ZYNQ_XC7Z010_Practice/My_Project/PS/MotionCtrl/zynq_fsbl/zynq_fsbl_bsp/libsrc/build_configs/gen_bsp/libsrc/scuwdt/src/CMakeFiles/install/strip.dir
+D:/Data/FPGA/ZYNQ_XC7Z010_Practice/My_Project/PS/MotionCtrl/zynq_fsbl/zynq_fsbl_bsp/libsrc/build_configs/gen_bsp/libsrc/uartps/src/CMakeFiles/uartps.dir
+D:/Data/FPGA/ZYNQ_XC7Z010_Practice/My_Project/PS/MotionCtrl/zynq_fsbl/zynq_fsbl_bsp/libsrc/build_configs/gen_bsp/libsrc/uartps/src/CMakeFiles/edit_cache.dir
+D:/Data/FPGA/ZYNQ_XC7Z010_Practice/My_Project/PS/MotionCtrl/zynq_fsbl/zynq_fsbl_bsp/libsrc/build_configs/gen_bsp/libsrc/uartps/src/CMakeFiles/rebuild_cache.dir
+D:/Data/FPGA/ZYNQ_XC7Z010_Practice/My_Project/PS/MotionCtrl/zynq_fsbl/zynq_fsbl_bsp/libsrc/build_configs/gen_bsp/libsrc/uartps/src/CMakeFiles/list_install_components.dir
+D:/Data/FPGA/ZYNQ_XC7Z010_Practice/My_Project/PS/MotionCtrl/zynq_fsbl/zynq_fsbl_bsp/libsrc/build_configs/gen_bsp/libsrc/uartps/src/CMakeFiles/install.dir
+D:/Data/FPGA/ZYNQ_XC7Z010_Practice/My_Project/PS/MotionCtrl/zynq_fsbl/zynq_fsbl_bsp/libsrc/build_configs/gen_bsp/libsrc/uartps/src/CMakeFiles/install/local.dir
+D:/Data/FPGA/ZYNQ_XC7Z010_Practice/My_Project/PS/MotionCtrl/zynq_fsbl/zynq_fsbl_bsp/libsrc/build_configs/gen_bsp/libsrc/uartps/src/CMakeFiles/install/strip.dir
 D:/Data/FPGA/ZYNQ_XC7Z010_Practice/My_Project/PS/MotionCtrl/zynq_fsbl/zynq_fsbl_bsp/libsrc/build_configs/gen_bsp/libsrc/xadcps/src/CMakeFiles/xadcps.dir
 D:/Data/FPGA/ZYNQ_XC7Z010_Practice/My_Project/PS/MotionCtrl/zynq_fsbl/zynq_fsbl_bsp/libsrc/build_configs/gen_bsp/libsrc/xadcps/src/CMakeFiles/edit_cache.dir
 D:/Data/FPGA/ZYNQ_XC7Z010_Practice/My_Project/PS/MotionCtrl/zynq_fsbl/zynq_fsbl_bsp/libsrc/build_configs/gen_bsp/libsrc/xadcps/src/CMakeFiles/rebuild_cache.dir

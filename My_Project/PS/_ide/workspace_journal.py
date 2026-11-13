@@ -48,3 +48,25 @@ comp.build()
 
 comp.build()
 
+comp.build()
+
+comp.build()
+
+comp.build()
+
+comp.build()
+
+comp.build()
+
+comp.build()
+
+comp.build()
+
+status = platform.update_hw(hw_design = "$COMPONENT_LOCATION/../../PL/zynq_wrapper.xsa")
+
+status = platform.build()
+
+comp.build()
+
+comp.build()
+

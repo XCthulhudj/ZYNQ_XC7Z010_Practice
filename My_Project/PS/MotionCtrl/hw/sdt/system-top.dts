@@ -32,7 +32,8 @@
 		stdout-path = "serial0:115200n8";
 	};
 	aliases {
-		serial0 = &coresight;
+		serial0 = &uart1;
+		serial1 = &coresight;
 	};
 	cpus_a9: cpus-a9@0 {
 		compatible = "cpus,cluster";
@@ -62,6 +63,7 @@
 			      <0xf8f00600 &scutimer 0xf8f00600 0x20>, 
 			      <0xf8f00620 &scuwdt 0xf8f00620 0xe0>, 
 			      <0xf8000000 &slcr 0xf8000000 0x1000>, 
+			      <0xe0001000 &uart1 0xe0001000 0x1000>, 
 			      <0xf8007100 &adc 0xf8007100 0x21>;
 		#ranges-address-cells = <0x1>;
 		#ranges-size-cells = <0x1>;

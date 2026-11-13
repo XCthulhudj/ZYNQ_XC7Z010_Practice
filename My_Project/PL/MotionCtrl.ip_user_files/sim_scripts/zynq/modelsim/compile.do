@@ -60,7 +60,6 @@ vlog -work processing_system7_vip_v1_0_23  -incr -mfcu  -sv -L axi_vip_v1_1_21 -
 vlog -work xil_defaultlib  -incr -mfcu  "+incdir+../../../../MotionCtrl.gen/sources_1/bd/zynq/ipshared/ec67/hdl" "+incdir+../../../../MotionCtrl.gen/sources_1/bd/zynq/ipshared/6cfa/hdl" "+incdir+../../../../MotionCtrl.gen/sources_1/bd/zynq/ipshared/f0b6/hdl/verilog" "+incdir+../../../../MotionCtrl.gen/sources_1/bd/zynq/ipshared/a8e4/hdl/verilog" "+incdir+E:/Xilinx/2025.1.1/Vivado/data/rsb/busdef" "+incdir+E:/Xilinx/2025.1.1/Vivado/data/xilinx_vip/include" \
 "../../../bd/zynq/ip/zynq_processing_system7_0_0/sim/zynq_processing_system7_0_0.v" \
 "../../../bd/zynq/ip/zynq_pl_led_blink_0_0/sim/zynq_pl_led_blink_0_0.v" \
-"../../../bd/zynq/sim/zynq.v" \
 
 vcom -work axi_lite_ipif_v3_0_4  -93  \
 "../../../../MotionCtrl.gen/sources_1/bd/zynq/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd" \
@@ -73,6 +72,9 @@ vcom -work axi_gpio_v2_0_37  -93  \
 
 vcom -work xil_defaultlib  -93  \
 "../../../bd/zynq/ip/zynq_axi_gpio_0_0/sim/zynq_axi_gpio_0_0.vhd" \
+
+vlog -work xil_defaultlib  -incr -mfcu  "+incdir+../../../../MotionCtrl.gen/sources_1/bd/zynq/ipshared/ec67/hdl" "+incdir+../../../../MotionCtrl.gen/sources_1/bd/zynq/ipshared/6cfa/hdl" "+incdir+../../../../MotionCtrl.gen/sources_1/bd/zynq/ipshared/f0b6/hdl/verilog" "+incdir+../../../../MotionCtrl.gen/sources_1/bd/zynq/ipshared/a8e4/hdl/verilog" "+incdir+E:/Xilinx/2025.1.1/Vivado/data/rsb/busdef" "+incdir+E:/Xilinx/2025.1.1/Vivado/data/xilinx_vip/include" \
+"../../../bd/zynq/ip/zynq_axi_smc_1/bd_0/sim/bd_bc6a.v" \
 
 vlog -work xlconstant_v1_1_10  -incr -mfcu  "+incdir+../../../../MotionCtrl.gen/sources_1/bd/zynq/ipshared/ec67/hdl" "+incdir+../../../../MotionCtrl.gen/sources_1/bd/zynq/ipshared/6cfa/hdl" "+incdir+../../../../MotionCtrl.gen/sources_1/bd/zynq/ipshared/f0b6/hdl/verilog" "+incdir+../../../../MotionCtrl.gen/sources_1/bd/zynq/ipshared/a8e4/hdl/verilog" "+incdir+E:/Xilinx/2025.1.1/Vivado/data/rsb/busdef" "+incdir+E:/Xilinx/2025.1.1/Vivado/data/xilinx_vip/include" \
 "../../../../MotionCtrl.gen/sources_1/bd/zynq/ipshared/a165/hdl/xlconstant_v1_1_vl_rfs.v" \
@@ -133,9 +135,6 @@ vlog -work smartconnect_v1_0  -incr -mfcu  -sv -L axi_vip_v1_1_21 -L smartconnec
 vlog -work xil_defaultlib  -incr -mfcu  -sv -L axi_vip_v1_1_21 -L smartconnect_v1_0 -L processing_system7_vip_v1_0_23 -L xilinx_vip "+incdir+../../../../MotionCtrl.gen/sources_1/bd/zynq/ipshared/ec67/hdl" "+incdir+../../../../MotionCtrl.gen/sources_1/bd/zynq/ipshared/6cfa/hdl" "+incdir+../../../../MotionCtrl.gen/sources_1/bd/zynq/ipshared/f0b6/hdl/verilog" "+incdir+../../../../MotionCtrl.gen/sources_1/bd/zynq/ipshared/a8e4/hdl/verilog" "+incdir+E:/Xilinx/2025.1.1/Vivado/data/rsb/busdef" "+incdir+E:/Xilinx/2025.1.1/Vivado/data/xilinx_vip/include" \
 "../../../bd/zynq/ip/zynq_axi_smc_1/bd_0/ip/ip_12/sim/bd_bc6a_m00e_0.sv" \
 
-vlog -work xil_defaultlib  -incr -mfcu  "+incdir+../../../../MotionCtrl.gen/sources_1/bd/zynq/ipshared/ec67/hdl" "+incdir+../../../../MotionCtrl.gen/sources_1/bd/zynq/ipshared/6cfa/hdl" "+incdir+../../../../MotionCtrl.gen/sources_1/bd/zynq/ipshared/f0b6/hdl/verilog" "+incdir+../../../../MotionCtrl.gen/sources_1/bd/zynq/ipshared/a8e4/hdl/verilog" "+incdir+E:/Xilinx/2025.1.1/Vivado/data/rsb/busdef" "+incdir+E:/Xilinx/2025.1.1/Vivado/data/xilinx_vip/include" \
-"../../../bd/zynq/ip/zynq_axi_smc_1/bd_0/sim/bd_bc6a.v" \
-
 vlog -work smartconnect_v1_0  -incr -mfcu  -sv -L axi_vip_v1_1_21 -L smartconnect_v1_0 -L processing_system7_vip_v1_0_23 -L xilinx_vip "+incdir+../../../../MotionCtrl.gen/sources_1/bd/zynq/ipshared/ec67/hdl" "+incdir+../../../../MotionCtrl.gen/sources_1/bd/zynq/ipshared/6cfa/hdl" "+incdir+../../../../MotionCtrl.gen/sources_1/bd/zynq/ipshared/f0b6/hdl/verilog" "+incdir+../../../../MotionCtrl.gen/sources_1/bd/zynq/ipshared/a8e4/hdl/verilog" "+incdir+E:/Xilinx/2025.1.1/Vivado/data/rsb/busdef" "+incdir+E:/Xilinx/2025.1.1/Vivado/data/xilinx_vip/include" \
 "../../../../MotionCtrl.gen/sources_1/bd/zynq/ipshared/3718/hdl/sc_switchboard_v1_0_vl_rfs.sv" \
 
@@ -147,6 +146,9 @@ vlog -work xil_defaultlib  -incr -mfcu  -sv -L axi_vip_v1_1_21 -L smartconnect_v
 
 vcom -work xil_defaultlib  -93  \
 "../../../bd/zynq/ip/zynq_rst_ps7_0_50M_1/sim/zynq_rst_ps7_0_50M_1.vhd" \
+
+vlog -work xil_defaultlib  -incr -mfcu  "+incdir+../../../../MotionCtrl.gen/sources_1/bd/zynq/ipshared/ec67/hdl" "+incdir+../../../../MotionCtrl.gen/sources_1/bd/zynq/ipshared/6cfa/hdl" "+incdir+../../../../MotionCtrl.gen/sources_1/bd/zynq/ipshared/f0b6/hdl/verilog" "+incdir+../../../../MotionCtrl.gen/sources_1/bd/zynq/ipshared/a8e4/hdl/verilog" "+incdir+E:/Xilinx/2025.1.1/Vivado/data/rsb/busdef" "+incdir+E:/Xilinx/2025.1.1/Vivado/data/xilinx_vip/include" \
+"../../../bd/zynq/sim/zynq.v" \
 
 vlog -work xil_defaultlib \
 "glbl.v"

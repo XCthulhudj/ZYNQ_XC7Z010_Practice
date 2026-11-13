@@ -121,6 +121,16 @@
 			xlnx,name = "ps7_m_axi_gp0";
 		};
 	};
+	&uart1 {
+		status = "okay";
+		xlnx,clock-freq = <100000000>;
+		xlnx,has-modem = <0>;
+		xlnx,ip-name = "ps7_uart";
+		cts-override;
+		port-number = <0>;
+		xlnx,uart-clk-freq-hz = <100000000>;
+		xlnx,name = "ps7_uart_1";
+	};
 	&gpio0 {
 		xlnx,mio-gpio-mask = <0x5600>;
 		status = "okay";

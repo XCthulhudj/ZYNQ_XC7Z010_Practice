@@ -64,6 +64,9 @@ ps7_scuwdt_0:
 ps7_slcr_0:
 - ps7_slcr
 - None
+ps7_uart_1:
+- ps7_uart
+- uartps
 ps7_xadc_0:
 - ps7_xadc
 - xadcps

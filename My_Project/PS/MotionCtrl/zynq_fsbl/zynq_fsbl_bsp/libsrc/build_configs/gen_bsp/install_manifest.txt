@@ -67,6 +67,8 @@ D:/Data/FPGA/ZYNQ_XC7Z010_Practice/My_Project/PS/MotionCtrl/zynq_fsbl/zynq_fsbl_
 D:/Data/FPGA/ZYNQ_XC7Z010_Practice/My_Project/PS/MotionCtrl/zynq_fsbl/zynq_fsbl_bsp/include/../include/xscuwdt_hw.h
 D:/Data/FPGA/ZYNQ_XC7Z010_Practice/My_Project/PS/MotionCtrl/zynq_fsbl/zynq_fsbl_bsp/include/../include/xstatus.h
 D:/Data/FPGA/ZYNQ_XC7Z010_Practice/My_Project/PS/MotionCtrl/zynq_fsbl/zynq_fsbl_bsp/include/../include/xtimer_config.h
+D:/Data/FPGA/ZYNQ_XC7Z010_Practice/My_Project/PS/MotionCtrl/zynq_fsbl/zynq_fsbl_bsp/include/../include/xuartps.h
+D:/Data/FPGA/ZYNQ_XC7Z010_Practice/My_Project/PS/MotionCtrl/zynq_fsbl/zynq_fsbl_bsp/include/../include/xuartps_hw.h
 D:/Data/FPGA/ZYNQ_XC7Z010_Practice/My_Project/PS/MotionCtrl/zynq_fsbl/zynq_fsbl_bsp/lib/libxilstandalone.a
 D:/Data/FPGA/ZYNQ_XC7Z010_Practice/My_Project/PS/MotionCtrl/zynq_fsbl/zynq_fsbl_bsp/include/../include/bspconfig.h
 D:/Data/FPGA/ZYNQ_XC7Z010_Practice/My_Project/PS/MotionCtrl/zynq_fsbl/zynq_fsbl_bsp/include/../include/diskio.h
@@ -137,6 +139,8 @@ D:/Data/FPGA/ZYNQ_XC7Z010_Practice/My_Project/PS/MotionCtrl/zynq_fsbl/zynq_fsbl_
 D:/Data/FPGA/ZYNQ_XC7Z010_Practice/My_Project/PS/MotionCtrl/zynq_fsbl/zynq_fsbl_bsp/include/../include/xscuwdt_hw.h
 D:/Data/FPGA/ZYNQ_XC7Z010_Practice/My_Project/PS/MotionCtrl/zynq_fsbl/zynq_fsbl_bsp/include/../include/xstatus.h
 D:/Data/FPGA/ZYNQ_XC7Z010_Practice/My_Project/PS/MotionCtrl/zynq_fsbl/zynq_fsbl_bsp/include/../include/xtimer_config.h
+D:/Data/FPGA/ZYNQ_XC7Z010_Practice/My_Project/PS/MotionCtrl/zynq_fsbl/zynq_fsbl_bsp/include/../include/xuartps.h
+D:/Data/FPGA/ZYNQ_XC7Z010_Practice/My_Project/PS/MotionCtrl/zynq_fsbl/zynq_fsbl_bsp/include/../include/xuartps_hw.h
 D:/Data/FPGA/ZYNQ_XC7Z010_Practice/My_Project/PS/MotionCtrl/zynq_fsbl/zynq_fsbl_bsp/lib/libxiltimer.a
 D:/Data/FPGA/ZYNQ_XC7Z010_Practice/My_Project/PS/MotionCtrl/zynq_fsbl/zynq_fsbl_bsp/include/../include/bspconfig.h
 D:/Data/FPGA/ZYNQ_XC7Z010_Practice/My_Project/PS/MotionCtrl/zynq_fsbl/zynq_fsbl_bsp/include/../include/diskio.h
@@ -207,6 +211,8 @@ D:/Data/FPGA/ZYNQ_XC7Z010_Practice/My_Project/PS/MotionCtrl/zynq_fsbl/zynq_fsbl_
 D:/Data/FPGA/ZYNQ_XC7Z010_Practice/My_Project/PS/MotionCtrl/zynq_fsbl/zynq_fsbl_bsp/include/../include/xscuwdt_hw.h
 D:/Data/FPGA/ZYNQ_XC7Z010_Practice/My_Project/PS/MotionCtrl/zynq_fsbl/zynq_fsbl_bsp/include/../include/xstatus.h
 D:/Data/FPGA/ZYNQ_XC7Z010_Practice/My_Project/PS/MotionCtrl/zynq_fsbl/zynq_fsbl_bsp/include/../include/xtimer_config.h
+D:/Data/FPGA/ZYNQ_XC7Z010_Practice/My_Project/PS/MotionCtrl/zynq_fsbl/zynq_fsbl_bsp/include/../include/xuartps.h
+D:/Data/FPGA/ZYNQ_XC7Z010_Practice/My_Project/PS/MotionCtrl/zynq_fsbl/zynq_fsbl_bsp/include/../include/xuartps_hw.h
 D:/Data/FPGA/ZYNQ_XC7Z010_Practice/My_Project/PS/MotionCtrl/zynq_fsbl/zynq_fsbl_bsp/lib/libxilffs.a
 D:/Data/FPGA/ZYNQ_XC7Z010_Practice/My_Project/PS/MotionCtrl/zynq_fsbl/zynq_fsbl_bsp/include/../include/bspconfig.h
 D:/Data/FPGA/ZYNQ_XC7Z010_Practice/My_Project/PS/MotionCtrl/zynq_fsbl/zynq_fsbl_bsp/include/../include/diskio.h
@@ -277,3 +283,5 @@ D:/Data/FPGA/ZYNQ_XC7Z010_Practice/My_Project/PS/MotionCtrl/zynq_fsbl/zynq_fsbl_
 D:/Data/FPGA/ZYNQ_XC7Z010_Practice/My_Project/PS/MotionCtrl/zynq_fsbl/zynq_fsbl_bsp/include/../include/xscuwdt_hw.h
 D:/Data/FPGA/ZYNQ_XC7Z010_Practice/My_Project/PS/MotionCtrl/zynq_fsbl/zynq_fsbl_bsp/include/../include/xstatus.h
 D:/Data/FPGA/ZYNQ_XC7Z010_Practice/My_Project/PS/MotionCtrl/zynq_fsbl/zynq_fsbl_bsp/include/../include/xtimer_config.h
+D:/Data/FPGA/ZYNQ_XC7Z010_Practice/My_Project/PS/MotionCtrl/zynq_fsbl/zynq_fsbl_bsp/include/../include/xuartps.h
+D:/Data/FPGA/ZYNQ_XC7Z010_Practice/My_Project/PS/MotionCtrl/zynq_fsbl/zynq_fsbl_bsp/include/../include/xuartps_hw.h
