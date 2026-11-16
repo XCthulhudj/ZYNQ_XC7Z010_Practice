@@ -1,4 +1,5 @@
 #include <stdint.h>
+#include <string.h>
 #include "xparameters.h"
 #include "xgpiops.h"
 #include "xgpio.h"
@@ -6,6 +7,7 @@
 #include "xscutimer.h"
 #include "xuartps.h"
 #include "xil_exception.h"
+#include "xil_printf.h"
 #include "sleep.h"
 
 #define PS_LED_PIN 15u
@@ -18,6 +20,7 @@ volatile uint8_t emio_intr_flag;
 volatile uint8_t axi_gpio_intr_flag;
 volatile uint8_t timer_intr_flag;
 volatile uint8_t uart_intr_flag;
+uint8_t uart1_buffer[64];
 
 XGpioPs gpio_inst;
 XGpioPs_Config *gpio_cfg_ptr;
@@ -31,10 +34,12 @@ XUartPs_Config *uart_cfg_ptr;
 
 void bsp_gpio_init(void);
 void bsp_timer_init(void);
+void bsp_uart_init(void);
 void bsp_gic_init(void);
 static void emio_intr_handler(void *arg);
 static void axi_intr_handler(void *arg);
 static void timer_intr_handler(void *arg);
+static void uart_intr_handler(void *arg);
 void XGpioPs_TogglePin(const XGpioPs *InstancePtr, u32 id);
 
 int main(void){
@@ -50,8 +55,12 @@ int main(void){
             axi_gpio_intr_flag = 0;
         }
         if(timer_intr_flag){
-            XGpioPs_TogglePin(&gpio_inst, PS_LED_PIN);
             timer_intr_flag = 0;
+            XGpioPs_TogglePin(&gpio_inst, PS_LED_PIN);
+        }
+        if(uart_intr_flag){
+            uart_intr_flag = 0;
+            // handle
         }
         msleep(20);
     }
@@ -77,7 +86,13 @@ void bsp_timer_init(void){
 }
 
 void bsp_uart_init(void){
+    uart_cfg_ptr = XUartPs_LookupConfig(XPAR_XUARTPS_0_BASEADDR);
+    XUartPs_CfgInitialize(&uart_inst, uart_cfg_ptr, uart_cfg_ptr->BaseAddress);
+    if(XUartPs_SelfTest(&uart_inst) != XST_SUCCESS) xil_printf("Uart Initialization Failed");
 
+    XUartPs_SetOperMode(&uart_inst, XUARTPS_OPER_MODE_NORMAL);
+    XUartPs_SetBaudRate(&uart_inst, 115200);
+    XUartPs_SetFifoThreshold(&uart_inst, 1); // Hardware FIFO Threshold: 1~63
 }
 
 void bsp_gic_init(void){
@@ -99,6 +114,10 @@ void bsp_gic_init(void){
     XScuTimer_EnableInterrupt(&timer_inst);
     XScuGic_Enable(&gic_inst, XPAR_SCUTIMER_INTR);
 
+    XUartPs_SetInterruptMask(&uart_inst, XUARTPS_IXR_RXOVR); //Interrupt trigger mode
+    XScuGic_Connect(&gic_inst, XPAR_XUARTPS_1_INTR, uart_intr_handler, &uart_inst);
+    XScuGic_Enable(&gic_inst, XPAR_XUARTPS_1_INTR);
+
     Xil_ExceptionInit();
     Xil_ExceptionRegisterHandler(XIL_EXCEPTION_ID_INT, (Xil_ExceptionHandler)XScuGic_InterruptHandler, &gic_inst);
     Xil_ExceptionEnable();
@@ -108,7 +127,7 @@ void bsp_gic_init(void){
 
 static void emio_intr_handler(void *arg){
     XGpioPs *gpio_inst_ptr = (XGpioPs*)arg;
-    if(XGpioPs_IntrGetStatusPin(gpio_inst_ptr, PL_EMIO_KEY_PIN)){ //XGpioPs_ReadPin(gpio_inst_ptr, PL_EMIO_KEY_PIN) == 0   is ok
+    if(XGpioPs_IntrGetStatusPin(gpio_inst_ptr, PL_EMIO_KEY_PIN)){ //"XGpioPs_ReadPin(gpio_inst_ptr, PL_EMIO_KEY_PIN) == 0" is also ok
         emio_intr_flag = 1;
         XGpioPs_IntrClearPin(gpio_inst_ptr, PL_EMIO_KEY_PIN);
     }
@@ -125,6 +144,22 @@ static void timer_intr_handler(void *arg){
     if(XScuTimer_IsExpired(timer_inst_ptr)){
         timer_intr_flag = 1;
         XScuTimer_ClearInterruptStatus(timer_inst_ptr);
+    }
+}
+static void uart_intr_handler(void *arg){
+    XUartPs *uart_inst_ptr = (XUartPs*)arg;
+    static u8 rx_buffer[64];
+    static u16 rx_len;
+    u32 flag = XUartPs_ReadReg(uart_inst_ptr->Config.BaseAddress, XUARTPS_SR_OFFSET);
+    flag &= XUARTPS_SR_RXOVR | XUARTPS_SR_RXEMPTY;
+    if(flag & XUARTPS_SR_RXOVR){
+        rx_len += XUartPs_Recv(uart_inst_ptr, rx_buffer, sizeof(rx_buffer));
+        if(rx_len == sizeof(rx_buffer)){
+            uart_intr_flag = 1;
+            rx_len = 0;
+            memcpy(uart1_buffer, rx_buffer, sizeof(rx_buffer));
+        }
+        XUartPs_WriteReg(uart_inst_ptr->Config.BaseAddress, XUARTPS_SR_OFFSET, XUARTPS_IXR_RXOVR);
     }
 }
 void XGpioPs_TogglePin(const XGpioPs *InstancePtr, u32 id){
