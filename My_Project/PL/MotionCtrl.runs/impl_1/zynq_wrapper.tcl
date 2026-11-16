@@ -108,10 +108,8 @@ set rc [catch {
   create_msg_db init_design.pb
   set_param chipscope.maxJobs 2
   set_param general.usePosixSpawnForFork 1
-  set_param synth.incrementalSynthesisCache C:/Users/Administrator/AppData/Roaming/Xilinx/Vivado/.Xil/Vivado-30388-DESKTOP-NUN3FF0/incrSyn
+  set_param synth.incrementalSynthesisCache C:/Users/Administrator/AppData/Roaming/Xilinx/Vivado/.Xil/Vivado-27516-DESKTOP-NUN3FF0/incrSyn
   set_param checkpoint.writeSynthRtdsInDcp 1
-  set_param bd.open.in_stealth_mode 1
-  set_param xicom.use_bs_reader 1
   set_param runs.launchOptions { -jobs 3  }
 OPTRACE "create in-memory project" START { }
   create_project -in_memory -part xc7z010clg400-1
@@ -121,6 +119,8 @@ OPTRACE "create in-memory project" END { }
 OPTRACE "set parameters" START { }
   set_property webtalk.parent_dir D:/Data/FPGA/ZYNQ_XC7Z010_Practice/My_Project/PL/MotionCtrl.cache/wt [current_project]
   set_property parent.project_path D:/Data/FPGA/ZYNQ_XC7Z010_Practice/My_Project/PL/MotionCtrl.xpr [current_project]
+  set_property ip_repo_paths D:/Data/FPGA/ZYNQ_XC7Z010_Practice/IP/ip_repo/breath_led_1_0 [current_project]
+  update_ip_catalog
   set_property ip_output_repo D:/Data/FPGA/ZYNQ_XC7Z010_Practice/My_Project/PL/MotionCtrl.cache/ip [current_project]
   set_property ip_cache_permissions {read write} [current_project]
   set_property XPM_LIBRARIES {XPM_CDC XPM_FIFO XPM_MEMORY} [current_project]

@@ -21,4 +21,7 @@ set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==zynq_axi_sm
 # IP: bd/zynq/ip/zynq_rst_ps7_0_50M_1/zynq_rst_ps7_0_50M_1.xci
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==zynq_rst_ps7_0_50M_1 || ORIG_REF_NAME==zynq_rst_ps7_0_50M_1} -quiet] -quiet
 
+# IP: bd/zynq/ip/zynq_breath_led_0_0/zynq_breath_led_0_0.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==zynq_breath_led_0_0 || ORIG_REF_NAME==zynq_breath_led_0_0} -quiet] -quiet
+
 # XDC: d:/Data/FPGA/ZYNQ_XC7Z010_Practice/My_Project/PL/MotionCtrl.gen/sources_1/bd/zynq/zynq_ooc.xdc

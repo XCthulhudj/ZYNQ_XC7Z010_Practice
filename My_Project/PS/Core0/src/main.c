@@ -10,6 +10,8 @@
 #include "xil_printf.h"
 #include "sleep.h"
 
+#include "breath_led.h"
+
 #define PS_LED_PIN 15u
 #define PL_EMIO_KEY_PIN 54u
 #define AXI_GPIO_CHANNEL_1 1u

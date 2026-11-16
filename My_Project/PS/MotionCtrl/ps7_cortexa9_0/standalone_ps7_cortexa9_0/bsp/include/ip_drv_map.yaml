@@ -1,6 +1,9 @@
 axi_gpio_0:
 - axi_gpio
 - gpio
+breath_led_0:
+- breath_led
+- None
 ps7_afi_0:
 - ps7_afi
 - None

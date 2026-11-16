@@ -5,5 +5,7 @@ set_property src_info {type:XDC file:1 line:5 export:INPUT save:INPUT read:READ}
 set_property PACKAGE_PIN J16 [get_ports PL_LED]
 set_property src_info {type:XDC file:1 line:8 export:INPUT save:INPUT read:READ} [current_design]
 set_property PACKAGE_PIN M19 [get_ports {GPIO_EMIO_KEY_tri_io[0]}]
-set_property src_info {type:XDC file:1 line:16 export:INPUT save:INPUT read:READ} [current_design]
+set_property src_info {type:XDC file:1 line:14 export:INPUT save:INPUT read:READ} [current_design]
 set_property PACKAGE_PIN L19 [get_ports {gpio_rtl_0_tri_io[0]}]
+set_property src_info {type:XDC file:1 line:21 export:INPUT save:INPUT read:READ} [current_design]
+set_property PACKAGE_PIN R18 [get_ports led_0]
