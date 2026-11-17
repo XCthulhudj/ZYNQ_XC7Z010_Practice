@@ -156,7 +156,10 @@ drv_info:
     driver: gpio
     ip_name: axi_gpio
     path: E:\Xilinx\2025.1.1\Vitis\data\embeddedsw\XilinxProcessorIPLib\drivers\gpio_v4_12
-  breath_led_0: None
+  breath_led_0:
+    driver: breath_led
+    ip_name: breath_led
+    path: D:\Data\FPGA\ZYNQ_XC7Z010_Practice\My_Project\PS\MotionCtrl\ps7_cortexa9_0\standalone_ps7_cortexa9_0\bsp\hw_artifacts\drivers\breath_led_v1_0
   ps7_afi_0: None
   ps7_afi_1: None
   ps7_afi_2: None

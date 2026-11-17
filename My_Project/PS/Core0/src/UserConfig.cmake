@@ -27,6 +27,8 @@ set(USER_UNDEFINED_SYMBOLS
 # Example 3: Adding ${CMAKE_SOURCE_DIR}/data/include to add data/include from this project.
 
 set(USER_INCLUDE_DIRECTORIES
+# 自定义 IP breath_led 的驱动头文件目录（BSP 尚未安装该驱动时的直连方式）
+# ${CMAKE_SOURCE_DIR}/../../MotionCtrl/hw/sdt/drivers/breath_led_v1_0/src
 )
 set(USER_COMPILE_SOURCES
 "main.c"

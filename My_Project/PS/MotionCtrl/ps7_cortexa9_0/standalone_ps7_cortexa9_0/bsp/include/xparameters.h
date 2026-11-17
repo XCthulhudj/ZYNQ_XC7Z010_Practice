@@ -1,6 +1,11 @@
 #ifndef XPARAMETERS_H   /* prevent circular inclusions */
 #define XPARAMETERS_H   /* by using protection macros */
 
+#define XPAR_XBREATH_LED_NUM_INSTANCES 1
+
+
+/* Canonical definitions for peripheral BREATH_LED_0 */
+
 #define XPAR_XCORESIGHTPS_DCC_NUM_INSTANCES 1
 
 /* Definitions for peripheral CORESIGHT */
@@ -247,10 +252,6 @@
 /* Definitions for peripheral PS7_AFI_3 */
 #define XPAR_PS7_AFI_3_BASEADDR 0xf800b000
 #define XPAR_PS7_AFI_3_HIGHADDR 0xf800bfff
-
-/* Definitions for peripheral BREATH_LED_0 */
-#define XPAR_BREATH_LED_0_BASEADDR 0x43c00000
-#define XPAR_BREATH_LED_0_HIGHADDR 0x43c0ffff
 
 #define XPAR_PS7_DDR_0_BASEADDRESS 0x100000
 #define XPAR_PS7_DDR_0_HIGHADDRESS 0x3fffffff

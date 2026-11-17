@@ -1,3 +1,4 @@
+D:/Data/FPGA/ZYNQ_XC7Z010_Practice/My_Project/PS/MotionCtrl/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/include/../include/breath_led.h
 D:/Data/FPGA/ZYNQ_XC7Z010_Practice/My_Project/PS/MotionCtrl/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/include/../include/bspconfig.h
 D:/Data/FPGA/ZYNQ_XC7Z010_Practice/My_Project/PS/MotionCtrl/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/include/../include/sleep.h
 D:/Data/FPGA/ZYNQ_XC7Z010_Practice/My_Project/PS/MotionCtrl/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/include/../include/smc.h
@@ -64,6 +65,7 @@ D:/Data/FPGA/ZYNQ_XC7Z010_Practice/My_Project/PS/MotionCtrl/ps7_cortexa9_0/stand
 D:/Data/FPGA/ZYNQ_XC7Z010_Practice/My_Project/PS/MotionCtrl/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/include/../include/xuartps.h
 D:/Data/FPGA/ZYNQ_XC7Z010_Practice/My_Project/PS/MotionCtrl/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/include/../include/xuartps_hw.h
 D:/Data/FPGA/ZYNQ_XC7Z010_Practice/My_Project/PS/MotionCtrl/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/lib/libxilstandalone.a
+D:/Data/FPGA/ZYNQ_XC7Z010_Practice/My_Project/PS/MotionCtrl/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/include/../include/breath_led.h
 D:/Data/FPGA/ZYNQ_XC7Z010_Practice/My_Project/PS/MotionCtrl/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/include/../include/bspconfig.h
 D:/Data/FPGA/ZYNQ_XC7Z010_Practice/My_Project/PS/MotionCtrl/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/include/../include/sleep.h
 D:/Data/FPGA/ZYNQ_XC7Z010_Practice/My_Project/PS/MotionCtrl/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/include/../include/smc.h
@@ -130,6 +132,7 @@ D:/Data/FPGA/ZYNQ_XC7Z010_Practice/My_Project/PS/MotionCtrl/ps7_cortexa9_0/stand
 D:/Data/FPGA/ZYNQ_XC7Z010_Practice/My_Project/PS/MotionCtrl/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/include/../include/xuartps.h
 D:/Data/FPGA/ZYNQ_XC7Z010_Practice/My_Project/PS/MotionCtrl/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/include/../include/xuartps_hw.h
 D:/Data/FPGA/ZYNQ_XC7Z010_Practice/My_Project/PS/MotionCtrl/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/lib/libxiltimer.a
+D:/Data/FPGA/ZYNQ_XC7Z010_Practice/My_Project/PS/MotionCtrl/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/include/../include/breath_led.h
 D:/Data/FPGA/ZYNQ_XC7Z010_Practice/My_Project/PS/MotionCtrl/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/include/../include/bspconfig.h
 D:/Data/FPGA/ZYNQ_XC7Z010_Practice/My_Project/PS/MotionCtrl/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/include/../include/sleep.h
 D:/Data/FPGA/ZYNQ_XC7Z010_Practice/My_Project/PS/MotionCtrl/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/include/../include/smc.h

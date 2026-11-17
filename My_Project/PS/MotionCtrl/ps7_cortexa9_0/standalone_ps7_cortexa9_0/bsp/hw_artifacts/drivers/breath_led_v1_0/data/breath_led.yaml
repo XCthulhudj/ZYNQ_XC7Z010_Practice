@@ -1,0 +1,12 @@
+%YAML 1.2
+---
+title: Bindings for breath_led controller
+type: driver
+
+properties:
+  compatible:
+    OneOf:
+      - items:
+        - enum:
+          - xlnx,breath-led-1.0
+  reg:
