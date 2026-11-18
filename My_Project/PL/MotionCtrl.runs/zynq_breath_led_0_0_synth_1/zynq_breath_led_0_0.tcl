@@ -57,6 +57,7 @@ if {$::dispatch::connected} {
 
 OPTRACE "zynq_breath_led_0_0_synth_1" START { ROLLUP_AUTO }
 set_param general.usePosixSpawnForFork 1
+set_param bd.open.in_stealth_mode 1
 set_param project.vivado.isBlockSynthRun true
 OPTRACE "Creating in-memory project" START { }
 create_project -in_memory -part xc7z010clg400-1
@@ -76,7 +77,7 @@ set_property ip_output_repo d:/Data/FPGA/ZYNQ_XC7Z010_Practice/My_Project/PL/Mot
 set_property ip_cache_permissions {read write} [current_project]
 OPTRACE "Creating in-memory project" END { }
 OPTRACE "Adding files" START { }
-read_ip -quiet d:/Data/FPGA/ZYNQ_XC7Z010_Practice/My_Project/PL/MotionCtrl.srcs/sources_1/bd/zynq/ip/zynq_breath_led_0_0/zynq_breath_led_0_0.xci
+read_ip -quiet D:/Data/FPGA/ZYNQ_XC7Z010_Practice/My_Project/PL/MotionCtrl.srcs/sources_1/bd/zynq/ip/zynq_breath_led_0_0/zynq_breath_led_0_0.xci
 
 OPTRACE "Adding files" END { }
 # Mark all dcp files as not used in implementation to prevent them from being

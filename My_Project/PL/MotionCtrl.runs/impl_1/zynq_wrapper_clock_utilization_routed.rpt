@@ -1,7 +1,7 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
 ---------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2025.1.1 (win64) Build 6233196 Thu Sep 11 21:27:30 MDT 2025
-| Date         : Mon Nov 16 17:59:22 2026
+| Date         : Wed Nov 18 14:50:20 2026
 | Host         : DESKTOP-NUN3FF0 running 64-bit major release  (build 9200)
 | Command      : report_clock_utilization -file zynq_wrapper_clock_utilization_routed.rpt
 | Design       : zynq_wrapper

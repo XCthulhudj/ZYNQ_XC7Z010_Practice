@@ -1,5 +1,4 @@
-
-
 proc generate {drv_handle} {
-	xdefine_include_file $drv_handle "xparameters.h" "breath_led" "NUM_INSTANCES" "DEVICE_ID"  "C_S00_AXI_BASEADDR" "C_S00_AXI_HIGHADDR"
+  ::hsi::utils::define_include_file $drv_handle "xparameters.h" "Breath_led" "NUM_INSTANCES" "C_BASEADDR" "C_HIGHADDR" "DEVICE_ID"
+  ::hsi::utils::define_canonical_xpars $drv_handle "xparameters.h" "Breath_led" "C_BASEADDR" "C_HIGHADDR" "DEVICE_ID"
 }

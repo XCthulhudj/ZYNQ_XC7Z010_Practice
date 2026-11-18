@@ -48,7 +48,7 @@ int main(void){
     bsp_gpio_init();
     bsp_timer_init();
     bsp_gic_init();
-
+    // BREATH_LED_mWriteReg(XPAR_XBREATH_LED_NUM_INSTANCES)
     while(1){
         if(emio_intr_flag){
             emio_intr_flag = 0;

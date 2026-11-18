@@ -1,6 +1,7 @@
 verilog xil_defaultlib -i "E:/Xilinx/2025.1.1/Vivado/data/rsb/busdef" --include "E:/Xilinx/2025.1.1/Vivado/data/xilinx_vip/include" --include "../../../../MotionCtrl.gen/sources_1/bd/zynq/ipshared/ec67/hdl" --include "../../../../MotionCtrl.gen/sources_1/bd/zynq/ipshared/6cfa/hdl" --include "../../../../MotionCtrl.gen/sources_1/bd/zynq/ipshared/f0b6/hdl/verilog" --include "../../../../MotionCtrl.gen/sources_1/bd/zynq/ipshared/a8e4/hdl/verilog" \
 "../../../bd/zynq/ip/zynq_processing_system7_0_0/sim/zynq_processing_system7_0_0.v" \
 "../../../bd/zynq/ip/zynq_pl_led_blink_0_0/sim/zynq_pl_led_blink_0_0.v" \
+"../../../bd/zynq/ip/zynq_axi_smc_1/bd_0/sim/bd_bc6a.v" \
 "../../../bd/zynq/ip/zynq_axi_smc_1/bd_0/ip/ip_0/sim/bd_bc6a_one_0.v" \
 
 sv xil_defaultlib -i "E:/Xilinx/2025.1.1/Vivado/data/rsb/busdef" --include "E:/Xilinx/2025.1.1/Vivado/data/xilinx_vip/include" --include "../../../../MotionCtrl.gen/sources_1/bd/zynq/ipshared/ec67/hdl" --include "../../../../MotionCtrl.gen/sources_1/bd/zynq/ipshared/6cfa/hdl" --include "../../../../MotionCtrl.gen/sources_1/bd/zynq/ipshared/f0b6/hdl/verilog" --include "../../../../MotionCtrl.gen/sources_1/bd/zynq/ipshared/a8e4/hdl/verilog" \
@@ -42,19 +43,14 @@ sv xil_defaultlib -i "E:/Xilinx/2025.1.1/Vivado/data/rsb/busdef" --include "E:/X
 "../../../bd/zynq/ip/zynq_axi_smc_1/bd_0/ip/ip_37/sim/bd_bc6a_m01wn_0.sv" \
 "../../../bd/zynq/ip/zynq_axi_smc_1/bd_0/ip/ip_38/sim/bd_bc6a_m01bn_0.sv" \
 "../../../bd/zynq/ip/zynq_axi_smc_1/bd_0/ip/ip_39/sim/bd_bc6a_m01e_0.sv" \
-
-verilog xil_defaultlib -i "E:/Xilinx/2025.1.1/Vivado/data/rsb/busdef" --include "E:/Xilinx/2025.1.1/Vivado/data/xilinx_vip/include" --include "../../../../MotionCtrl.gen/sources_1/bd/zynq/ipshared/ec67/hdl" --include "../../../../MotionCtrl.gen/sources_1/bd/zynq/ipshared/6cfa/hdl" --include "../../../../MotionCtrl.gen/sources_1/bd/zynq/ipshared/f0b6/hdl/verilog" --include "../../../../MotionCtrl.gen/sources_1/bd/zynq/ipshared/a8e4/hdl/verilog" \
-"../../../bd/zynq/ip/zynq_axi_smc_1/bd_0/sim/bd_bc6a.v" \
-
-sv xil_defaultlib -i "E:/Xilinx/2025.1.1/Vivado/data/rsb/busdef" --include "E:/Xilinx/2025.1.1/Vivado/data/xilinx_vip/include" --include "../../../../MotionCtrl.gen/sources_1/bd/zynq/ipshared/ec67/hdl" --include "../../../../MotionCtrl.gen/sources_1/bd/zynq/ipshared/6cfa/hdl" --include "../../../../MotionCtrl.gen/sources_1/bd/zynq/ipshared/f0b6/hdl/verilog" --include "../../../../MotionCtrl.gen/sources_1/bd/zynq/ipshared/a8e4/hdl/verilog" \
 "../../../bd/zynq/ip/zynq_axi_smc_1/sim/zynq_axi_smc_1.sv" \
 
 verilog xil_defaultlib -i "E:/Xilinx/2025.1.1/Vivado/data/rsb/busdef" --include "E:/Xilinx/2025.1.1/Vivado/data/xilinx_vip/include" --include "../../../../MotionCtrl.gen/sources_1/bd/zynq/ipshared/ec67/hdl" --include "../../../../MotionCtrl.gen/sources_1/bd/zynq/ipshared/6cfa/hdl" --include "../../../../MotionCtrl.gen/sources_1/bd/zynq/ipshared/f0b6/hdl/verilog" --include "../../../../MotionCtrl.gen/sources_1/bd/zynq/ipshared/a8e4/hdl/verilog" \
-"../../../bd/zynq/sim/zynq.v" \
 "../../../bd/zynq/ipshared/d9f5/hdl/breath_led_slave_lite_v1_0_S00_AXI.v" \
 "../../../bd/zynq/ipshared/d9f5/hdl/breath_led_top.v" \
 "../../../bd/zynq/ipshared/d9f5/hdl/breath_led.v" \
 "../../../bd/zynq/ip/zynq_breath_led_0_0/sim/zynq_breath_led_0_0.v" \
+"../../../bd/zynq/sim/zynq.v" \
 
 verilog xil_defaultlib "glbl.v"
 
