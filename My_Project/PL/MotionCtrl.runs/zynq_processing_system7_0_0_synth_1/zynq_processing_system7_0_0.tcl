@@ -57,12 +57,7 @@ if {$::dispatch::connected} {
 
 OPTRACE "zynq_processing_system7_0_0_synth_1" START { ROLLUP_AUTO }
 set_param general.usePosixSpawnForFork 1
-set_param synth.incrementalSynthesisCache C:/Users/Administrator/AppData/Roaming/Xilinx/Vivado/.Xil/Vivado-30388-DESKTOP-NUN3FF0/incrSyn
-set_param checkpoint.writeSynthRtdsInDcp 1
 set_param bd.open.in_stealth_mode 1
-set_param xicom.use_bs_reader 1
-set_msg_config -id {Synth 8-256} -limit 10000
-set_msg_config -id {Synth 8-638} -limit 10000
 set_param project.vivado.isBlockSynthRun true
 set_msg_config -msgmgr_mode ooc_run
 OPTRACE "Creating in-memory project" START { }
@@ -77,6 +72,8 @@ set_property parent.project_path D:/Data/FPGA/ZYNQ_XC7Z010_Practice/My_Project/P
 set_property XPM_LIBRARIES {XPM_CDC XPM_FIFO XPM_MEMORY} [current_project]
 set_property default_lib xil_defaultlib [current_project]
 set_property target_language Verilog [current_project]
+set_property ip_repo_paths d:/Data/FPGA/ZYNQ_XC7Z010_Practice/IP/ip_repo/breath_led_1_0 [current_project]
+update_ip_catalog
 set_property ip_output_repo d:/Data/FPGA/ZYNQ_XC7Z010_Practice/My_Project/PL/MotionCtrl.cache/ip [current_project]
 set_property ip_cache_permissions {read write} [current_project]
 OPTRACE "Creating in-memory project" END { }

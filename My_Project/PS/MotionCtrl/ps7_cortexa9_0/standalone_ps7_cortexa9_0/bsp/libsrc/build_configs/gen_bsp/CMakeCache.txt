@@ -364,6 +364,15 @@ libxil_IS_TOP_LEVEL:STATIC=OFF
 //Value Computed by CMake
 libxil_SOURCE_DIR:STATIC=D:/Data/FPGA/ZYNQ_XC7Z010_Practice/My_Project/PS/MotionCtrl/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/libsrc
 
+//Value Computed by CMake
+nandps_BINARY_DIR:STATIC=D:/Data/FPGA/ZYNQ_XC7Z010_Practice/My_Project/PS/MotionCtrl/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/libsrc/build_configs/gen_bsp/libsrc/nandps/src
+
+//Value Computed by CMake
+nandps_IS_TOP_LEVEL:STATIC=OFF
+
+//Value Computed by CMake
+nandps_SOURCE_DIR:STATIC=D:/Data/FPGA/ZYNQ_XC7Z010_Practice/My_Project/PS/MotionCtrl/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/libsrc/nandps/src
+
 //Archiver used to archive libraries for both BSP generation as
 // well as applications.
 proc_archiver:STRING=arm-none-eabi-gcc-ar.exe
@@ -587,7 +596,7 @@ CMAKE_MODULE_LINKER_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_NM
 CMAKE_NM-ADVANCED:INTERNAL=1
 //number of local generators
-CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=25
+CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=26
 //ADVANCED property for variable: CMAKE_OBJCOPY
 CMAKE_OBJCOPY-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_OBJDUMP

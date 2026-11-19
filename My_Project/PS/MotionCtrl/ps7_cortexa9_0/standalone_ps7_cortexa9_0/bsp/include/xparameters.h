@@ -98,6 +98,22 @@
 #define XPAR_XGPIOPS_0_INTERRUPTS 0x4014
 #define XPAR_XGPIOPS_0_INTERRUPT_PARENT 0xf8f01000
 
+#define XPAR_XNANDPS_NUM_INSTANCES 1
+
+/* Definitions for peripheral SMCC */
+#define XPAR_SMCC_COMPATIBLE "arm,pl353-smc-r2p1"
+#define XPAR_SMCC_FLASHBASE 0xe000e000
+#define XPAR_SMCC_BASEADDR 0xe1000000
+#define XPAR_SMCC_HIGHADDR 0xe1ffffff
+#define XPAR_SMCC_NAND_BUS_WIDTH 0x8
+
+/* Canonical definitions for peripheral SMCC */
+#define XPAR_XNANDPS_0_BASEADDR 0xe1000000
+#define XPAR_XNANDPS_0_HIGHADDR 0xe1ffffff
+#define XPAR_XNANDPS_0_COMPATIBLE "arm,pl353-smc-r2p1"
+#define XPAR_XNANDPS_0_FLASHBASE 0xe000e000
+#define XPAR_XNANDPS_0_NAND_BUS_WIDTH 0x8
+
 #define XPAR_XSCUGIC_NUM_INSTANCES 1
 
 /* Definitions for peripheral INTC */
@@ -192,6 +208,14 @@
 /* Canonical definitions for peripheral MC */
 #define XPAR_PS7_DDRC_0_BASEADDR 0xf8006000
 #define XPAR_PS7_DDRC_0_HIGHADDR 0xf8006fff
+
+/* Definitions for peripheral NFC0 */
+#define XPAR_NFC0_BASEADDR 0x0
+#define XPAR_NFC0_HIGHADDR 0x100000000ffffff
+
+/* Canonical definitions for peripheral NFC0 */
+#define XPAR_PS7_NAND_0_BASEADDR 0x0
+#define XPAR_PS7_NAND_0_HIGHADDR 0x100000000ffffff
 
 /* Definitions for peripheral SLCR */
 #define XPAR_SLCR_BASEADDR 0xf8000000

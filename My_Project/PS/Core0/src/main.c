@@ -17,6 +17,7 @@
 #define AXI_GPIO_CHANNEL_1 1u
 
 #define TIMER_LOAD_VALUE 0x9ec969f
+#define XPAR_BREATH_LED_0_S00_AXI_BASEADDR 0x43C00000
 
 volatile uint8_t emio_intr_flag;
 volatile uint8_t axi_gpio_intr_flag;
@@ -48,7 +49,9 @@ int main(void){
     bsp_gpio_init();
     bsp_timer_init();
     bsp_gic_init();
-    // BREATH_LED_mWriteReg(XPAR_XBREATH_LED_NUM_INSTANCES)
+    BREATH_LED_mWriteReg(XPAR_BREATH_LED_0_S00_AXI_BASEADDR, BREATH_LED_S00_AXI_SLV_REG0_OFFSET, 0x00000001);
+    BREATH_LED_mWriteReg(XPAR_BREATH_LED_0_S00_AXI_BASEADDR, BREATH_LED_S00_AXI_SLV_REG1_OFFSET, 0x000003FF & 50);
+    
     while(1){
         if(emio_intr_flag){
             emio_intr_flag = 0;
@@ -161,7 +164,7 @@ static void uart_intr_handler(void *arg){
             rx_len = 0;
             memcpy(uart1_buffer, rx_buffer, sizeof(rx_buffer));
         }
-        XUartPs_WriteReg(uart_inst_ptr->Config.BaseAddress, XUARTPS_SR_OFFSET, XUARTPS_IXR_RXOVR);
+        XUartPs_WriteReg(uart_inst_ptr->Config.BaseAddress, XUARTPS_ISR_OFFSET, XUARTPS_IXR_RXOVR);
     }
 }
 void XGpioPs_TogglePin(const XGpioPs *InstancePtr, u32 id){

@@ -48,6 +48,10 @@ D:/Data/FPGA/ZYNQ_XC7Z010_Practice/My_Project/PS/MotionCtrl/ps7_cortexa9_0/stand
 D:/Data/FPGA/ZYNQ_XC7Z010_Practice/My_Project/PS/MotionCtrl/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/include/../include/xl2cc.h
 D:/Data/FPGA/ZYNQ_XC7Z010_Practice/My_Project/PS/MotionCtrl/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/include/../include/xl2cc_counter.h
 D:/Data/FPGA/ZYNQ_XC7Z010_Practice/My_Project/PS/MotionCtrl/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/include/../include/xmem_config.h
+D:/Data/FPGA/ZYNQ_XC7Z010_Practice/My_Project/PS/MotionCtrl/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/include/../include/xnandps.h
+D:/Data/FPGA/ZYNQ_XC7Z010_Practice/My_Project/PS/MotionCtrl/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/include/../include/xnandps_bbm.h
+D:/Data/FPGA/ZYNQ_XC7Z010_Practice/My_Project/PS/MotionCtrl/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/include/../include/xnandps_hw.h
+D:/Data/FPGA/ZYNQ_XC7Z010_Practice/My_Project/PS/MotionCtrl/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/include/../include/xnandps_onfi.h
 D:/Data/FPGA/ZYNQ_XC7Z010_Practice/My_Project/PS/MotionCtrl/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/include/../include/xparameters_ps.h
 D:/Data/FPGA/ZYNQ_XC7Z010_Practice/My_Project/PS/MotionCtrl/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/include/../include/xplatform_info.h
 D:/Data/FPGA/ZYNQ_XC7Z010_Practice/My_Project/PS/MotionCtrl/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/include/../include/xpm_counter.h
@@ -115,6 +119,10 @@ D:/Data/FPGA/ZYNQ_XC7Z010_Practice/My_Project/PS/MotionCtrl/ps7_cortexa9_0/stand
 D:/Data/FPGA/ZYNQ_XC7Z010_Practice/My_Project/PS/MotionCtrl/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/include/../include/xl2cc.h
 D:/Data/FPGA/ZYNQ_XC7Z010_Practice/My_Project/PS/MotionCtrl/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/include/../include/xl2cc_counter.h
 D:/Data/FPGA/ZYNQ_XC7Z010_Practice/My_Project/PS/MotionCtrl/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/include/../include/xmem_config.h
+D:/Data/FPGA/ZYNQ_XC7Z010_Practice/My_Project/PS/MotionCtrl/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/include/../include/xnandps.h
+D:/Data/FPGA/ZYNQ_XC7Z010_Practice/My_Project/PS/MotionCtrl/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/include/../include/xnandps_bbm.h
+D:/Data/FPGA/ZYNQ_XC7Z010_Practice/My_Project/PS/MotionCtrl/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/include/../include/xnandps_hw.h
+D:/Data/FPGA/ZYNQ_XC7Z010_Practice/My_Project/PS/MotionCtrl/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/include/../include/xnandps_onfi.h
 D:/Data/FPGA/ZYNQ_XC7Z010_Practice/My_Project/PS/MotionCtrl/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/include/../include/xparameters_ps.h
 D:/Data/FPGA/ZYNQ_XC7Z010_Practice/My_Project/PS/MotionCtrl/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/include/../include/xplatform_info.h
 D:/Data/FPGA/ZYNQ_XC7Z010_Practice/My_Project/PS/MotionCtrl/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/include/../include/xpm_counter.h
@@ -182,6 +190,10 @@ D:/Data/FPGA/ZYNQ_XC7Z010_Practice/My_Project/PS/MotionCtrl/ps7_cortexa9_0/stand
 D:/Data/FPGA/ZYNQ_XC7Z010_Practice/My_Project/PS/MotionCtrl/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/include/../include/xl2cc.h
 D:/Data/FPGA/ZYNQ_XC7Z010_Practice/My_Project/PS/MotionCtrl/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/include/../include/xl2cc_counter.h
 D:/Data/FPGA/ZYNQ_XC7Z010_Practice/My_Project/PS/MotionCtrl/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/include/../include/xmem_config.h
+D:/Data/FPGA/ZYNQ_XC7Z010_Practice/My_Project/PS/MotionCtrl/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/include/../include/xnandps.h
+D:/Data/FPGA/ZYNQ_XC7Z010_Practice/My_Project/PS/MotionCtrl/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/include/../include/xnandps_bbm.h
+D:/Data/FPGA/ZYNQ_XC7Z010_Practice/My_Project/PS/MotionCtrl/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/include/../include/xnandps_hw.h
+D:/Data/FPGA/ZYNQ_XC7Z010_Practice/My_Project/PS/MotionCtrl/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/include/../include/xnandps_onfi.h
 D:/Data/FPGA/ZYNQ_XC7Z010_Practice/My_Project/PS/MotionCtrl/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/include/../include/xparameters_ps.h
 D:/Data/FPGA/ZYNQ_XC7Z010_Practice/My_Project/PS/MotionCtrl/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/include/../include/xplatform_info.h
 D:/Data/FPGA/ZYNQ_XC7Z010_Practice/My_Project/PS/MotionCtrl/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/include/../include/xpm_counter.h

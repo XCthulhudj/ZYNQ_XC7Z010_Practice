@@ -131,6 +131,40 @@
 		xlnx,uart-clk-freq-hz = <100000000>;
 		xlnx,name = "ps7_uart_1";
 	};
+	&nfc0 {
+		arm,nand-cycle-t5 = <0>;
+		xlnx,nand-clk-freq-hz = <100000000>;
+		arm,nand-cycle-t6 = <0>;
+		xlnx,nand-width = <8>;
+		nand-bus-width = <8>;
+		xlnx,ip-name = "ps7_nand";
+		xlnx,nand-cycle-t0 = <11>;
+		xlnx,nand-cycle-t1 = <11>;
+		xlnx,nand-cycle-t2 = <1>;
+		xlnx,nand-cycle-t3 = <1>;
+		xlnx,nand-cycle-t4 = <1>;
+		xlnx,nand-cycle-t5 = <1>;
+		arm,nand-cycle-t0 = <1>;
+		xlnx,nand-cycle-t6 = <1>;
+		arm,nand-cycle-t1 = <1>;
+		status = "okay";
+		arm,nand-cycle-t2 = <0>;
+		arm,nand-cycle-t3 = <0>;
+		arm,nand-cycle-t4 = <0>;
+		xlnx,name = "ps7_nand_0";
+	};
+	&smcc {
+		xlnx,sram-chip-sel1 = <0>;
+		xlnx,nor-chip-sel1 = <0>;
+		xlnx,addr25 = <0>;
+		status = "okay";
+		nand-bus-width = <8>;
+		flashbase = <0xe000e000>;
+		xlnx,ip-name = "ps7_smcc";
+		xlnx,sram-chip-sel0 = <0>;
+		xlnx,nor-chip-sel0 = <0>;
+		xlnx,name = "ps7_smcc_0";
+	};
 	&gpio0 {
 		xlnx,mio-gpio-mask = <0x5600>;
 		status = "okay";
