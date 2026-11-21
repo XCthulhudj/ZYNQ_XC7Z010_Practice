@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="synth_1" LaunchPart="xc7z010clg400-1" LaunchTime="1795075572" LaunchIncrCheckpoint="$PSRCDIR/utils_1/imports/synth_1/zynq_wrapper.dcp">
+<GenRun Id="synth_1" LaunchPart="xc7z010clg400-1" LaunchTime="1795231974" LaunchIncrCheckpoint="$PSRCDIR/utils_1/imports/synth_1/zynq_wrapper.dcp">
   <File Type="PA-TCL" Name="zynq_wrapper.tcl"/>
   <File Type="REPORTS-TCL" Name="zynq_wrapper_reports.tcl"/>
   <File Type="RDS-RDS" Name="zynq_wrapper.vds"/>

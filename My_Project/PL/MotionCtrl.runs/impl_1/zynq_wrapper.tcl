@@ -107,6 +107,7 @@ set rc [catch {
   set_param chipscope.maxJobs 2
   set_param general.usePosixSpawnForFork 1
   set_param bd.open.in_stealth_mode 1
+  set_param xicom.use_bs_reader 1
   set_param runs.launchOptions { -jobs 3  }
 OPTRACE "create in-memory project" START { }
   create_project -in_memory -part xc7z010clg400-1

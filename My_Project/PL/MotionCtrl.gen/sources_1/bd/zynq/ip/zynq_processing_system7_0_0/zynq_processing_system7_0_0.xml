@@ -14996,7 +14996,7 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>9:5d97b91d</spirit:value>
+            <spirit:value>9:79a68c05</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -15011,11 +15011,11 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Thu Nov 19 08:06:00 UTC 2026</spirit:value>
+            <spirit:value>Sat Nov 21 03:32:23 UTC 2026</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>9:1edddcf9</spirit:value>
+            <spirit:value>9:10f3b3fc</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>sim_type</spirit:name>
@@ -15034,11 +15034,11 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Thu Nov 19 08:06:00 UTC 2026</spirit:value>
+            <spirit:value>Sat Nov 21 03:32:23 UTC 2026</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>9:5d97b91d</spirit:value>
+            <spirit:value>9:79a68c05</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -15053,11 +15053,11 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Thu Nov 19 08:06:01 UTC 2026</spirit:value>
+            <spirit:value>Sat Nov 21 03:32:24 UTC 2026</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>9:1edddcf9</spirit:value>
+            <spirit:value>9:10f3b3fc</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>sim_type</spirit:name>
@@ -15076,11 +15076,11 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Thu Nov 19 08:06:00 UTC 2026</spirit:value>
+            <spirit:value>Sat Nov 21 03:32:22 UTC 2026</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>9:ca2921ff</spirit:value>
+            <spirit:value>9:a3e6a5be</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -15091,7 +15091,7 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>9:ca2921ff</spirit:value>
+            <spirit:value>9:a3e6a5be</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -15105,11 +15105,11 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Thu Nov 19 08:07:17 UTC 2026</spirit:value>
+            <spirit:value>Sat Nov 21 03:34:05 UTC 2026</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>9:ca2921ff</spirit:value>
+            <spirit:value>9:a3e6a5be</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -15120,7 +15120,7 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>9:ca2921ff</spirit:value>
+            <spirit:value>9:a3e6a5be</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -15136,11 +15136,11 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Thu Nov 19 08:06:00 UTC 2026</spirit:value>
+            <spirit:value>Sat Nov 21 03:32:23 UTC 2026</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>9:232c8678</spirit:value>
+            <spirit:value>9:fc3f040f</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>sim_type</spirit:name>
@@ -15160,11 +15160,11 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Thu Nov 19 08:06:00 UTC 2026</spirit:value>
+            <spirit:value>Sat Nov 21 03:32:23 UTC 2026</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>9:232c8678</spirit:value>
+            <spirit:value>9:fc3f040f</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>sim_type</spirit:name>
@@ -15184,11 +15184,11 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Thu Nov 19 08:06:00 UTC 2026</spirit:value>
+            <spirit:value>Sat Nov 21 03:32:22 UTC 2026</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>9:ca2921ff</spirit:value>
+            <spirit:value>9:a3e6a5be</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -31825,6 +31825,11 @@
       <spirit:enumeration>0xE0102fff</spirit:enumeration>
     </spirit:choice>
     <spirit:choice>
+      <spirit:name>choice_list_369f74cf</spirit:name>
+      <spirit:enumeration>LVCMOS 1.8V</spirit:enumeration>
+      <spirit:enumeration>HSTL 1.8V</spirit:enumeration>
+    </spirit:choice>
+    <spirit:choice>
       <spirit:name>choice_list_3740015d</spirit:name>
       <spirit:enumeration>0xE0103fff</spirit:enumeration>
     </spirit:choice>
@@ -32112,22 +32117,6 @@
       <spirit:enumeration>1</spirit:enumeration>
       <spirit:enumeration>2</spirit:enumeration>
       <spirit:enumeration>3</spirit:enumeration>
-    </spirit:choice>
-    <spirit:choice>
-      <spirit:name>choice_list_7f27baa5</spirit:name>
-      <spirit:enumeration>DDR3_800D</spirit:enumeration>
-      <spirit:enumeration>DDR3_800E</spirit:enumeration>
-      <spirit:enumeration>DDR3_1066E</spirit:enumeration>
-      <spirit:enumeration>DDR3_1066F</spirit:enumeration>
-      <spirit:enumeration>DDR3_1066G</spirit:enumeration>
-      <spirit:enumeration>DDR3_1333F</spirit:enumeration>
-      <spirit:enumeration>DDR3_1333G</spirit:enumeration>
-      <spirit:enumeration>DDR3_1333H</spirit:enumeration>
-      <spirit:enumeration>DDR3_1333J</spirit:enumeration>
-      <spirit:enumeration>DDR3_1600G</spirit:enumeration>
-      <spirit:enumeration>DDR3_1600H</spirit:enumeration>
-      <spirit:enumeration>DDR3_1600J</spirit:enumeration>
-      <spirit:enumeration>DDR3_1600K</spirit:enumeration>
     </spirit:choice>
     <spirit:choice>
       <spirit:name>choice_list_82c3921b</spirit:name>
@@ -32461,6 +32450,20 @@
       <spirit:enumeration>MIO 2 .. 9</spirit:enumeration>
     </spirit:choice>
     <spirit:choice>
+      <spirit:name>choice_list_bbba28a6</spirit:name>
+      <spirit:enumeration>DDR3_1066E</spirit:enumeration>
+      <spirit:enumeration>DDR3_1066F</spirit:enumeration>
+      <spirit:enumeration>DDR3_1066G</spirit:enumeration>
+      <spirit:enumeration>DDR3_1333F</spirit:enumeration>
+      <spirit:enumeration>DDR3_1333G</spirit:enumeration>
+      <spirit:enumeration>DDR3_1333H</spirit:enumeration>
+      <spirit:enumeration>DDR3_1333J</spirit:enumeration>
+      <spirit:enumeration>DDR3_1600G</spirit:enumeration>
+      <spirit:enumeration>DDR3_1600H</spirit:enumeration>
+      <spirit:enumeration>DDR3_1600J</spirit:enumeration>
+      <spirit:enumeration>DDR3_1600K</spirit:enumeration>
+    </spirit:choice>
+    <spirit:choice>
       <spirit:name>choice_list_bc805c93</spirit:name>
       <spirit:enumeration>&lt;Select></spirit:enumeration>
       <spirit:enumeration>x1</spirit:enumeration>
@@ -32625,6 +32628,12 @@
       <spirit:enumeration>MIO 51</spirit:enumeration>
       <spirit:enumeration>MIO 52</spirit:enumeration>
       <spirit:enumeration>MIO 53</spirit:enumeration>
+    </spirit:choice>
+    <spirit:choice>
+      <spirit:name>choice_list_d88af9c3</spirit:name>
+      <spirit:enumeration>&lt;Select></spirit:enumeration>
+      <spirit:enumeration>Share reset pin</spirit:enumeration>
+      <spirit:enumeration>Separate reset pins</spirit:enumeration>
     </spirit:choice>
     <spirit:choice>
       <spirit:name>choice_list_da0dabdb</spirit:name>
@@ -33703,7 +33712,7 @@
     <spirit:parameter>
       <spirit:name>PCW_UIPARAM_DDR_T_RC</spirit:name>
       <spirit:displayName>PCW UIPARAM DDR T RC</spirit:displayName>
-      <spirit:value spirit:format="float" spirit:resolve="user" spirit:id="PARAM_VALUE.PCW_UIPARAM_DDR_T_RC" spirit:order="14800" spirit:minimum="0.000000" spirit:maximum="100.000000">48.91</spirit:value>
+      <spirit:value spirit:format="float" spirit:resolve="user" spirit:id="PARAM_VALUE.PCW_UIPARAM_DDR_T_RC" spirit:order="14800" spirit:minimum="0.000000" spirit:maximum="100.000000">48.75</spirit:value>
       <spirit:vendorExtensions>
         <xilinx:parameterInfo>
           <xilinx:enablement>
@@ -36485,7 +36494,7 @@
     <spirit:parameter>
       <spirit:name>PCW_PRESET_BANK1_VOLTAGE</spirit:name>
       <spirit:displayName>PCW PRESET BANK1 VOLTAGE</spirit:displayName>
-      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.PCW_PRESET_BANK1_VOLTAGE" spirit:choiceRef="choice_list_72f3e128" spirit:order="29300">LVCMOS 3.3V</spirit:value>
+      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.PCW_PRESET_BANK1_VOLTAGE" spirit:choiceRef="choice_list_72f3e128" spirit:order="29300">LVCMOS 1.8V</spirit:value>
     </spirit:parameter>
     <spirit:parameter>
       <spirit:name>PCW_UIPARAM_DDR_ENABLE</spirit:name>
@@ -36500,7 +36509,7 @@
     <spirit:parameter>
       <spirit:name>PCW_UIPARAM_DDR_MEMORY_TYPE</spirit:name>
       <spirit:displayName>PCW UIPARAM DDR MEMORY TYPE</spirit:displayName>
-      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.PCW_UIPARAM_DDR_MEMORY_TYPE" spirit:choiceRef="choice_list_c5ebb0ea" spirit:order="13000">DDR 3</spirit:value>
+      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.PCW_UIPARAM_DDR_MEMORY_TYPE" spirit:choiceRef="choice_list_c5ebb0ea" spirit:order="13000">DDR 3 (Low Voltage)</spirit:value>
     </spirit:parameter>
     <spirit:parameter>
       <spirit:name>PCW_UIPARAM_DDR_ECC</spirit:name>
@@ -36532,7 +36541,7 @@
     <spirit:parameter>
       <spirit:name>PCW_UIPARAM_DDR_PARTNO</spirit:name>
       <spirit:displayName>PCW UIPARAM DDR PARTNO</spirit:displayName>
-      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.PCW_UIPARAM_DDR_PARTNO" spirit:choiceRef="choice_list_be8ca58c" spirit:order="13600">MT41J256M16 RE-125</spirit:value>
+      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.PCW_UIPARAM_DDR_PARTNO" spirit:choiceRef="choice_list_be8ca58c" spirit:order="13600">MT41K256M16 RE-125</spirit:value>
     </spirit:parameter>
     <spirit:parameter>
       <spirit:name>PCW_UIPARAM_DDR_DRAM_WIDTH</spirit:name>
@@ -36561,7 +36570,7 @@
     <spirit:parameter>
       <spirit:name>PCW_UIPARAM_DDR_SPEED_BIN</spirit:name>
       <spirit:displayName>PCW UIPARAM DDR SPEED BIN</spirit:displayName>
-      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.PCW_UIPARAM_DDR_SPEED_BIN" spirit:choiceRef="choice_list_7f27baa5" spirit:order="14000">DDR3_1066F</spirit:value>
+      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.PCW_UIPARAM_DDR_SPEED_BIN" spirit:choiceRef="choice_list_bbba28a6" spirit:order="14000">DDR3_1066F</spirit:value>
       <spirit:vendorExtensions>
         <xilinx:parameterInfo>
           <xilinx:enablement>
@@ -37187,7 +37196,7 @@
     </spirit:parameter>
     <spirit:parameter>
       <spirit:name>PCW_ENET_RESET_SELECT</spirit:name>
-      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.PCW_ENET_RESET_SELECT" spirit:choiceRef="choice_list_fe5d5471" spirit:order="6103">&lt;Select></spirit:value>
+      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.PCW_ENET_RESET_SELECT" spirit:choiceRef="choice_list_d88af9c3" spirit:order="6103">&lt;Select></spirit:value>
       <spirit:vendorExtensions>
         <xilinx:parameterInfo>
           <xilinx:enablement>
@@ -38892,7 +38901,7 @@
     <spirit:parameter>
       <spirit:name>PCW_MIO_16_IOTYPE</spirit:name>
       <spirit:displayName>PCW MIO 16 IOTYPE</spirit:displayName>
-      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.PCW_MIO_16_IOTYPE" spirit:choiceRef="choice_list_6bc4d474" spirit:order="34816">LVCMOS 3.3V</spirit:value>
+      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.PCW_MIO_16_IOTYPE" spirit:choiceRef="choice_list_369f74cf" spirit:order="34816">LVCMOS 1.8V</spirit:value>
     </spirit:parameter>
     <spirit:parameter>
       <spirit:name>PCW_MIO_16_DIRECTION</spirit:name>
@@ -38919,7 +38928,7 @@
     <spirit:parameter>
       <spirit:name>PCW_MIO_17_IOTYPE</spirit:name>
       <spirit:displayName>PCW MIO 17 IOTYPE</spirit:displayName>
-      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.PCW_MIO_17_IOTYPE" spirit:choiceRef="choice_list_6bc4d474" spirit:order="34817">LVCMOS 3.3V</spirit:value>
+      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.PCW_MIO_17_IOTYPE" spirit:choiceRef="choice_list_369f74cf" spirit:order="34817">LVCMOS 1.8V</spirit:value>
     </spirit:parameter>
     <spirit:parameter>
       <spirit:name>PCW_MIO_17_DIRECTION</spirit:name>
@@ -38946,7 +38955,7 @@
     <spirit:parameter>
       <spirit:name>PCW_MIO_18_IOTYPE</spirit:name>
       <spirit:displayName>PCW MIO 18 IOTYPE</spirit:displayName>
-      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.PCW_MIO_18_IOTYPE" spirit:choiceRef="choice_list_6bc4d474" spirit:order="34818">LVCMOS 3.3V</spirit:value>
+      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.PCW_MIO_18_IOTYPE" spirit:choiceRef="choice_list_369f74cf" spirit:order="34818">LVCMOS 1.8V</spirit:value>
     </spirit:parameter>
     <spirit:parameter>
       <spirit:name>PCW_MIO_18_DIRECTION</spirit:name>
@@ -38973,7 +38982,7 @@
     <spirit:parameter>
       <spirit:name>PCW_MIO_19_IOTYPE</spirit:name>
       <spirit:displayName>PCW MIO 19 IOTYPE</spirit:displayName>
-      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.PCW_MIO_19_IOTYPE" spirit:choiceRef="choice_list_6bc4d474" spirit:order="34819">LVCMOS 3.3V</spirit:value>
+      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.PCW_MIO_19_IOTYPE" spirit:choiceRef="choice_list_369f74cf" spirit:order="34819">LVCMOS 1.8V</spirit:value>
     </spirit:parameter>
     <spirit:parameter>
       <spirit:name>PCW_MIO_19_DIRECTION</spirit:name>
@@ -39000,7 +39009,7 @@
     <spirit:parameter>
       <spirit:name>PCW_MIO_20_IOTYPE</spirit:name>
       <spirit:displayName>PCW MIO 20 IOTYPE</spirit:displayName>
-      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.PCW_MIO_20_IOTYPE" spirit:choiceRef="choice_list_6bc4d474" spirit:order="34820">LVCMOS 3.3V</spirit:value>
+      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.PCW_MIO_20_IOTYPE" spirit:choiceRef="choice_list_369f74cf" spirit:order="34820">LVCMOS 1.8V</spirit:value>
     </spirit:parameter>
     <spirit:parameter>
       <spirit:name>PCW_MIO_20_DIRECTION</spirit:name>
@@ -39027,7 +39036,7 @@
     <spirit:parameter>
       <spirit:name>PCW_MIO_21_IOTYPE</spirit:name>
       <spirit:displayName>PCW MIO 21 IOTYPE</spirit:displayName>
-      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.PCW_MIO_21_IOTYPE" spirit:choiceRef="choice_list_6bc4d474" spirit:order="34821">LVCMOS 3.3V</spirit:value>
+      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.PCW_MIO_21_IOTYPE" spirit:choiceRef="choice_list_369f74cf" spirit:order="34821">LVCMOS 1.8V</spirit:value>
     </spirit:parameter>
     <spirit:parameter>
       <spirit:name>PCW_MIO_21_DIRECTION</spirit:name>
@@ -39054,7 +39063,7 @@
     <spirit:parameter>
       <spirit:name>PCW_MIO_22_IOTYPE</spirit:name>
       <spirit:displayName>PCW MIO 22 IOTYPE</spirit:displayName>
-      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.PCW_MIO_22_IOTYPE" spirit:choiceRef="choice_list_6bc4d474" spirit:order="34822">LVCMOS 3.3V</spirit:value>
+      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.PCW_MIO_22_IOTYPE" spirit:choiceRef="choice_list_369f74cf" spirit:order="34822">LVCMOS 1.8V</spirit:value>
     </spirit:parameter>
     <spirit:parameter>
       <spirit:name>PCW_MIO_22_DIRECTION</spirit:name>
@@ -39081,7 +39090,7 @@
     <spirit:parameter>
       <spirit:name>PCW_MIO_23_IOTYPE</spirit:name>
       <spirit:displayName>PCW MIO 23 IOTYPE</spirit:displayName>
-      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.PCW_MIO_23_IOTYPE" spirit:choiceRef="choice_list_6bc4d474" spirit:order="34823">LVCMOS 3.3V</spirit:value>
+      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.PCW_MIO_23_IOTYPE" spirit:choiceRef="choice_list_369f74cf" spirit:order="34823">LVCMOS 1.8V</spirit:value>
     </spirit:parameter>
     <spirit:parameter>
       <spirit:name>PCW_MIO_23_DIRECTION</spirit:name>
@@ -39108,7 +39117,7 @@
     <spirit:parameter>
       <spirit:name>PCW_MIO_24_IOTYPE</spirit:name>
       <spirit:displayName>PCW MIO 24 IOTYPE</spirit:displayName>
-      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.PCW_MIO_24_IOTYPE" spirit:choiceRef="choice_list_6bc4d474" spirit:order="34824">LVCMOS 3.3V</spirit:value>
+      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.PCW_MIO_24_IOTYPE" spirit:choiceRef="choice_list_369f74cf" spirit:order="34824">LVCMOS 1.8V</spirit:value>
     </spirit:parameter>
     <spirit:parameter>
       <spirit:name>PCW_MIO_24_DIRECTION</spirit:name>
@@ -39135,7 +39144,7 @@
     <spirit:parameter>
       <spirit:name>PCW_MIO_25_IOTYPE</spirit:name>
       <spirit:displayName>PCW MIO 25 IOTYPE</spirit:displayName>
-      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.PCW_MIO_25_IOTYPE" spirit:choiceRef="choice_list_6bc4d474" spirit:order="34825">LVCMOS 3.3V</spirit:value>
+      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.PCW_MIO_25_IOTYPE" spirit:choiceRef="choice_list_369f74cf" spirit:order="34825">LVCMOS 1.8V</spirit:value>
     </spirit:parameter>
     <spirit:parameter>
       <spirit:name>PCW_MIO_25_DIRECTION</spirit:name>
@@ -39162,7 +39171,7 @@
     <spirit:parameter>
       <spirit:name>PCW_MIO_26_IOTYPE</spirit:name>
       <spirit:displayName>PCW MIO 26 IOTYPE</spirit:displayName>
-      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.PCW_MIO_26_IOTYPE" spirit:choiceRef="choice_list_6bc4d474" spirit:order="34826">LVCMOS 3.3V</spirit:value>
+      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.PCW_MIO_26_IOTYPE" spirit:choiceRef="choice_list_369f74cf" spirit:order="34826">LVCMOS 1.8V</spirit:value>
     </spirit:parameter>
     <spirit:parameter>
       <spirit:name>PCW_MIO_26_DIRECTION</spirit:name>
@@ -39189,7 +39198,7 @@
     <spirit:parameter>
       <spirit:name>PCW_MIO_27_IOTYPE</spirit:name>
       <spirit:displayName>PCW MIO 27 IOTYPE</spirit:displayName>
-      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.PCW_MIO_27_IOTYPE" spirit:choiceRef="choice_list_6bc4d474" spirit:order="34827">LVCMOS 3.3V</spirit:value>
+      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.PCW_MIO_27_IOTYPE" spirit:choiceRef="choice_list_369f74cf" spirit:order="34827">LVCMOS 1.8V</spirit:value>
     </spirit:parameter>
     <spirit:parameter>
       <spirit:name>PCW_MIO_27_DIRECTION</spirit:name>
@@ -39216,7 +39225,7 @@
     <spirit:parameter>
       <spirit:name>PCW_MIO_28_IOTYPE</spirit:name>
       <spirit:displayName>PCW MIO 28 IOTYPE</spirit:displayName>
-      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.PCW_MIO_28_IOTYPE" spirit:choiceRef="choice_list_6bc4d474" spirit:order="34828">LVCMOS 3.3V</spirit:value>
+      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.PCW_MIO_28_IOTYPE" spirit:choiceRef="choice_list_369f74cf" spirit:order="34828">LVCMOS 1.8V</spirit:value>
     </spirit:parameter>
     <spirit:parameter>
       <spirit:name>PCW_MIO_28_DIRECTION</spirit:name>
@@ -39243,7 +39252,7 @@
     <spirit:parameter>
       <spirit:name>PCW_MIO_29_IOTYPE</spirit:name>
       <spirit:displayName>PCW MIO 29 IOTYPE</spirit:displayName>
-      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.PCW_MIO_29_IOTYPE" spirit:choiceRef="choice_list_6bc4d474" spirit:order="34829">LVCMOS 3.3V</spirit:value>
+      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.PCW_MIO_29_IOTYPE" spirit:choiceRef="choice_list_369f74cf" spirit:order="34829">LVCMOS 1.8V</spirit:value>
     </spirit:parameter>
     <spirit:parameter>
       <spirit:name>PCW_MIO_29_DIRECTION</spirit:name>
@@ -39270,7 +39279,7 @@
     <spirit:parameter>
       <spirit:name>PCW_MIO_30_IOTYPE</spirit:name>
       <spirit:displayName>PCW MIO 30 IOTYPE</spirit:displayName>
-      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.PCW_MIO_30_IOTYPE" spirit:choiceRef="choice_list_6bc4d474" spirit:order="34830">LVCMOS 3.3V</spirit:value>
+      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.PCW_MIO_30_IOTYPE" spirit:choiceRef="choice_list_369f74cf" spirit:order="34830">LVCMOS 1.8V</spirit:value>
     </spirit:parameter>
     <spirit:parameter>
       <spirit:name>PCW_MIO_30_DIRECTION</spirit:name>
@@ -39297,7 +39306,7 @@
     <spirit:parameter>
       <spirit:name>PCW_MIO_31_IOTYPE</spirit:name>
       <spirit:displayName>PCW MIO 31 IOTYPE</spirit:displayName>
-      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.PCW_MIO_31_IOTYPE" spirit:choiceRef="choice_list_6bc4d474" spirit:order="34831">LVCMOS 3.3V</spirit:value>
+      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.PCW_MIO_31_IOTYPE" spirit:choiceRef="choice_list_369f74cf" spirit:order="34831">LVCMOS 1.8V</spirit:value>
     </spirit:parameter>
     <spirit:parameter>
       <spirit:name>PCW_MIO_31_DIRECTION</spirit:name>
@@ -39324,7 +39333,7 @@
     <spirit:parameter>
       <spirit:name>PCW_MIO_32_IOTYPE</spirit:name>
       <spirit:displayName>PCW MIO 32 IOTYPE</spirit:displayName>
-      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.PCW_MIO_32_IOTYPE" spirit:choiceRef="choice_list_6bc4d474" spirit:order="34832">LVCMOS 3.3V</spirit:value>
+      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.PCW_MIO_32_IOTYPE" spirit:choiceRef="choice_list_369f74cf" spirit:order="34832">LVCMOS 1.8V</spirit:value>
     </spirit:parameter>
     <spirit:parameter>
       <spirit:name>PCW_MIO_32_DIRECTION</spirit:name>
@@ -39351,7 +39360,7 @@
     <spirit:parameter>
       <spirit:name>PCW_MIO_33_IOTYPE</spirit:name>
       <spirit:displayName>PCW MIO 33 IOTYPE</spirit:displayName>
-      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.PCW_MIO_33_IOTYPE" spirit:choiceRef="choice_list_6bc4d474" spirit:order="34833">LVCMOS 3.3V</spirit:value>
+      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.PCW_MIO_33_IOTYPE" spirit:choiceRef="choice_list_369f74cf" spirit:order="34833">LVCMOS 1.8V</spirit:value>
     </spirit:parameter>
     <spirit:parameter>
       <spirit:name>PCW_MIO_33_DIRECTION</spirit:name>
@@ -39378,7 +39387,7 @@
     <spirit:parameter>
       <spirit:name>PCW_MIO_34_IOTYPE</spirit:name>
       <spirit:displayName>PCW MIO 34 IOTYPE</spirit:displayName>
-      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.PCW_MIO_34_IOTYPE" spirit:choiceRef="choice_list_6bc4d474" spirit:order="34834">LVCMOS 3.3V</spirit:value>
+      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.PCW_MIO_34_IOTYPE" spirit:choiceRef="choice_list_369f74cf" spirit:order="34834">LVCMOS 1.8V</spirit:value>
     </spirit:parameter>
     <spirit:parameter>
       <spirit:name>PCW_MIO_34_DIRECTION</spirit:name>
@@ -39405,7 +39414,7 @@
     <spirit:parameter>
       <spirit:name>PCW_MIO_35_IOTYPE</spirit:name>
       <spirit:displayName>PCW MIO 35 IOTYPE</spirit:displayName>
-      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.PCW_MIO_35_IOTYPE" spirit:choiceRef="choice_list_6bc4d474" spirit:order="34835">LVCMOS 3.3V</spirit:value>
+      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.PCW_MIO_35_IOTYPE" spirit:choiceRef="choice_list_369f74cf" spirit:order="34835">LVCMOS 1.8V</spirit:value>
     </spirit:parameter>
     <spirit:parameter>
       <spirit:name>PCW_MIO_35_DIRECTION</spirit:name>
@@ -39432,7 +39441,7 @@
     <spirit:parameter>
       <spirit:name>PCW_MIO_36_IOTYPE</spirit:name>
       <spirit:displayName>PCW MIO 36 IOTYPE</spirit:displayName>
-      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.PCW_MIO_36_IOTYPE" spirit:choiceRef="choice_list_6bc4d474" spirit:order="34836">LVCMOS 3.3V</spirit:value>
+      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.PCW_MIO_36_IOTYPE" spirit:choiceRef="choice_list_369f74cf" spirit:order="34836">LVCMOS 1.8V</spirit:value>
     </spirit:parameter>
     <spirit:parameter>
       <spirit:name>PCW_MIO_36_DIRECTION</spirit:name>
@@ -39459,7 +39468,7 @@
     <spirit:parameter>
       <spirit:name>PCW_MIO_37_IOTYPE</spirit:name>
       <spirit:displayName>PCW MIO 37 IOTYPE</spirit:displayName>
-      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.PCW_MIO_37_IOTYPE" spirit:choiceRef="choice_list_6bc4d474" spirit:order="34837">LVCMOS 3.3V</spirit:value>
+      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.PCW_MIO_37_IOTYPE" spirit:choiceRef="choice_list_369f74cf" spirit:order="34837">LVCMOS 1.8V</spirit:value>
     </spirit:parameter>
     <spirit:parameter>
       <spirit:name>PCW_MIO_37_DIRECTION</spirit:name>
@@ -39486,7 +39495,7 @@
     <spirit:parameter>
       <spirit:name>PCW_MIO_38_IOTYPE</spirit:name>
       <spirit:displayName>PCW MIO 38 IOTYPE</spirit:displayName>
-      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.PCW_MIO_38_IOTYPE" spirit:choiceRef="choice_list_6bc4d474" spirit:order="34838">LVCMOS 3.3V</spirit:value>
+      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.PCW_MIO_38_IOTYPE" spirit:choiceRef="choice_list_369f74cf" spirit:order="34838">LVCMOS 1.8V</spirit:value>
     </spirit:parameter>
     <spirit:parameter>
       <spirit:name>PCW_MIO_38_DIRECTION</spirit:name>
@@ -39513,7 +39522,7 @@
     <spirit:parameter>
       <spirit:name>PCW_MIO_39_IOTYPE</spirit:name>
       <spirit:displayName>PCW MIO 39 IOTYPE</spirit:displayName>
-      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.PCW_MIO_39_IOTYPE" spirit:choiceRef="choice_list_6bc4d474" spirit:order="34839">LVCMOS 3.3V</spirit:value>
+      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.PCW_MIO_39_IOTYPE" spirit:choiceRef="choice_list_369f74cf" spirit:order="34839">LVCMOS 1.8V</spirit:value>
     </spirit:parameter>
     <spirit:parameter>
       <spirit:name>PCW_MIO_39_DIRECTION</spirit:name>
@@ -39540,7 +39549,7 @@
     <spirit:parameter>
       <spirit:name>PCW_MIO_40_IOTYPE</spirit:name>
       <spirit:displayName>PCW MIO 40 IOTYPE</spirit:displayName>
-      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.PCW_MIO_40_IOTYPE" spirit:choiceRef="choice_list_6bc4d474" spirit:order="34840">LVCMOS 3.3V</spirit:value>
+      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.PCW_MIO_40_IOTYPE" spirit:choiceRef="choice_list_369f74cf" spirit:order="34840">LVCMOS 1.8V</spirit:value>
     </spirit:parameter>
     <spirit:parameter>
       <spirit:name>PCW_MIO_40_DIRECTION</spirit:name>
@@ -39567,7 +39576,7 @@
     <spirit:parameter>
       <spirit:name>PCW_MIO_41_IOTYPE</spirit:name>
       <spirit:displayName>PCW MIO 41 IOTYPE</spirit:displayName>
-      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.PCW_MIO_41_IOTYPE" spirit:choiceRef="choice_list_6bc4d474" spirit:order="34841">LVCMOS 3.3V</spirit:value>
+      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.PCW_MIO_41_IOTYPE" spirit:choiceRef="choice_list_369f74cf" spirit:order="34841">LVCMOS 1.8V</spirit:value>
     </spirit:parameter>
     <spirit:parameter>
       <spirit:name>PCW_MIO_41_DIRECTION</spirit:name>
@@ -39594,7 +39603,7 @@
     <spirit:parameter>
       <spirit:name>PCW_MIO_42_IOTYPE</spirit:name>
       <spirit:displayName>PCW MIO 42 IOTYPE</spirit:displayName>
-      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.PCW_MIO_42_IOTYPE" spirit:choiceRef="choice_list_6bc4d474" spirit:order="34842">LVCMOS 3.3V</spirit:value>
+      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.PCW_MIO_42_IOTYPE" spirit:choiceRef="choice_list_369f74cf" spirit:order="34842">LVCMOS 1.8V</spirit:value>
     </spirit:parameter>
     <spirit:parameter>
       <spirit:name>PCW_MIO_42_DIRECTION</spirit:name>
@@ -39621,7 +39630,7 @@
     <spirit:parameter>
       <spirit:name>PCW_MIO_43_IOTYPE</spirit:name>
       <spirit:displayName>PCW MIO 43 IOTYPE</spirit:displayName>
-      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.PCW_MIO_43_IOTYPE" spirit:choiceRef="choice_list_6bc4d474" spirit:order="34843">LVCMOS 3.3V</spirit:value>
+      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.PCW_MIO_43_IOTYPE" spirit:choiceRef="choice_list_369f74cf" spirit:order="34843">LVCMOS 1.8V</spirit:value>
     </spirit:parameter>
     <spirit:parameter>
       <spirit:name>PCW_MIO_43_DIRECTION</spirit:name>
@@ -39648,7 +39657,7 @@
     <spirit:parameter>
       <spirit:name>PCW_MIO_44_IOTYPE</spirit:name>
       <spirit:displayName>PCW MIO 44 IOTYPE</spirit:displayName>
-      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.PCW_MIO_44_IOTYPE" spirit:choiceRef="choice_list_6bc4d474" spirit:order="34844">LVCMOS 3.3V</spirit:value>
+      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.PCW_MIO_44_IOTYPE" spirit:choiceRef="choice_list_369f74cf" spirit:order="34844">LVCMOS 1.8V</spirit:value>
     </spirit:parameter>
     <spirit:parameter>
       <spirit:name>PCW_MIO_44_DIRECTION</spirit:name>
@@ -39675,7 +39684,7 @@
     <spirit:parameter>
       <spirit:name>PCW_MIO_45_IOTYPE</spirit:name>
       <spirit:displayName>PCW MIO 45 IOTYPE</spirit:displayName>
-      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.PCW_MIO_45_IOTYPE" spirit:choiceRef="choice_list_6bc4d474" spirit:order="34845">LVCMOS 3.3V</spirit:value>
+      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.PCW_MIO_45_IOTYPE" spirit:choiceRef="choice_list_369f74cf" spirit:order="34845">LVCMOS 1.8V</spirit:value>
     </spirit:parameter>
     <spirit:parameter>
       <spirit:name>PCW_MIO_45_DIRECTION</spirit:name>
@@ -39702,7 +39711,7 @@
     <spirit:parameter>
       <spirit:name>PCW_MIO_46_IOTYPE</spirit:name>
       <spirit:displayName>PCW MIO 46 IOTYPE</spirit:displayName>
-      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.PCW_MIO_46_IOTYPE" spirit:choiceRef="choice_list_6bc4d474" spirit:order="34846">LVCMOS 3.3V</spirit:value>
+      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.PCW_MIO_46_IOTYPE" spirit:choiceRef="choice_list_369f74cf" spirit:order="34846">LVCMOS 1.8V</spirit:value>
     </spirit:parameter>
     <spirit:parameter>
       <spirit:name>PCW_MIO_46_DIRECTION</spirit:name>
@@ -39729,7 +39738,7 @@
     <spirit:parameter>
       <spirit:name>PCW_MIO_47_IOTYPE</spirit:name>
       <spirit:displayName>PCW MIO 47 IOTYPE</spirit:displayName>
-      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.PCW_MIO_47_IOTYPE" spirit:choiceRef="choice_list_6bc4d474" spirit:order="34847">LVCMOS 3.3V</spirit:value>
+      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.PCW_MIO_47_IOTYPE" spirit:choiceRef="choice_list_369f74cf" spirit:order="34847">LVCMOS 1.8V</spirit:value>
     </spirit:parameter>
     <spirit:parameter>
       <spirit:name>PCW_MIO_47_DIRECTION</spirit:name>
@@ -39751,12 +39760,12 @@
     <spirit:parameter>
       <spirit:name>PCW_MIO_48_PULLUP</spirit:name>
       <spirit:displayName>PCW MIO 48 PULLUP</spirit:displayName>
-      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.PCW_MIO_48_PULLUP" spirit:choiceRef="choice_list_2d7daef4" spirit:order="29448">enabled</spirit:value>
+      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.PCW_MIO_48_PULLUP" spirit:choiceRef="choice_list_2d7daef4" spirit:order="29448">disabled</spirit:value>
     </spirit:parameter>
     <spirit:parameter>
       <spirit:name>PCW_MIO_48_IOTYPE</spirit:name>
       <spirit:displayName>PCW MIO 48 IOTYPE</spirit:displayName>
-      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.PCW_MIO_48_IOTYPE" spirit:choiceRef="choice_list_6bc4d474" spirit:order="34848">LVCMOS 3.3V</spirit:value>
+      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.PCW_MIO_48_IOTYPE" spirit:choiceRef="choice_list_369f74cf" spirit:order="34848">LVCMOS 1.8V</spirit:value>
     </spirit:parameter>
     <spirit:parameter>
       <spirit:name>PCW_MIO_48_DIRECTION</spirit:name>
@@ -39778,12 +39787,12 @@
     <spirit:parameter>
       <spirit:name>PCW_MIO_49_PULLUP</spirit:name>
       <spirit:displayName>PCW MIO 49 PULLUP</spirit:displayName>
-      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.PCW_MIO_49_PULLUP" spirit:choiceRef="choice_list_2d7daef4" spirit:order="29449">enabled</spirit:value>
+      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.PCW_MIO_49_PULLUP" spirit:choiceRef="choice_list_2d7daef4" spirit:order="29449">disabled</spirit:value>
     </spirit:parameter>
     <spirit:parameter>
       <spirit:name>PCW_MIO_49_IOTYPE</spirit:name>
       <spirit:displayName>PCW MIO 49 IOTYPE</spirit:displayName>
-      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.PCW_MIO_49_IOTYPE" spirit:choiceRef="choice_list_6bc4d474" spirit:order="34849">LVCMOS 3.3V</spirit:value>
+      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.PCW_MIO_49_IOTYPE" spirit:choiceRef="choice_list_369f74cf" spirit:order="34849">LVCMOS 1.8V</spirit:value>
     </spirit:parameter>
     <spirit:parameter>
       <spirit:name>PCW_MIO_49_DIRECTION</spirit:name>
@@ -39805,12 +39814,12 @@
     <spirit:parameter>
       <spirit:name>PCW_MIO_50_PULLUP</spirit:name>
       <spirit:displayName>PCW MIO 50 PULLUP</spirit:displayName>
-      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.PCW_MIO_50_PULLUP" spirit:choiceRef="choice_list_2d7daef4" spirit:order="29450">enabled</spirit:value>
+      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.PCW_MIO_50_PULLUP" spirit:choiceRef="choice_list_2d7daef4" spirit:order="29450">disabled</spirit:value>
     </spirit:parameter>
     <spirit:parameter>
       <spirit:name>PCW_MIO_50_IOTYPE</spirit:name>
       <spirit:displayName>PCW MIO 50 IOTYPE</spirit:displayName>
-      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.PCW_MIO_50_IOTYPE" spirit:choiceRef="choice_list_6bc4d474" spirit:order="34850">LVCMOS 3.3V</spirit:value>
+      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.PCW_MIO_50_IOTYPE" spirit:choiceRef="choice_list_369f74cf" spirit:order="34850">LVCMOS 1.8V</spirit:value>
     </spirit:parameter>
     <spirit:parameter>
       <spirit:name>PCW_MIO_50_DIRECTION</spirit:name>
@@ -39827,7 +39836,7 @@
     <spirit:parameter>
       <spirit:name>PCW_MIO_50_SLEW</spirit:name>
       <spirit:displayName>PCW MIO 50 SLEW</spirit:displayName>
-      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.PCW_MIO_50_SLEW" spirit:choiceRef="choice_list_86458347" spirit:order="40350">slow</spirit:value>
+      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.PCW_MIO_50_SLEW" spirit:choiceRef="choice_list_86458347" spirit:order="40350">fast</spirit:value>
     </spirit:parameter>
     <spirit:parameter>
       <spirit:name>PCW_MIO_51_PULLUP</spirit:name>
@@ -39837,7 +39846,7 @@
     <spirit:parameter>
       <spirit:name>PCW_MIO_51_IOTYPE</spirit:name>
       <spirit:displayName>PCW MIO 51 IOTYPE</spirit:displayName>
-      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.PCW_MIO_51_IOTYPE" spirit:choiceRef="choice_list_6bc4d474" spirit:order="34851">LVCMOS 3.3V</spirit:value>
+      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.PCW_MIO_51_IOTYPE" spirit:choiceRef="choice_list_369f74cf" spirit:order="34851">LVCMOS 1.8V</spirit:value>
     </spirit:parameter>
     <spirit:parameter>
       <spirit:name>PCW_MIO_51_DIRECTION</spirit:name>
@@ -39864,7 +39873,7 @@
     <spirit:parameter>
       <spirit:name>PCW_MIO_52_IOTYPE</spirit:name>
       <spirit:displayName>PCW MIO 52 IOTYPE</spirit:displayName>
-      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.PCW_MIO_52_IOTYPE" spirit:choiceRef="choice_list_6bc4d474" spirit:order="34852">LVCMOS 3.3V</spirit:value>
+      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.PCW_MIO_52_IOTYPE" spirit:choiceRef="choice_list_369f74cf" spirit:order="34852">LVCMOS 1.8V</spirit:value>
     </spirit:parameter>
     <spirit:parameter>
       <spirit:name>PCW_MIO_52_DIRECTION</spirit:name>
@@ -39891,7 +39900,7 @@
     <spirit:parameter>
       <spirit:name>PCW_MIO_53_IOTYPE</spirit:name>
       <spirit:displayName>PCW MIO 53 IOTYPE</spirit:displayName>
-      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.PCW_MIO_53_IOTYPE" spirit:choiceRef="choice_list_6bc4d474" spirit:order="34853">LVCMOS 3.3V</spirit:value>
+      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.PCW_MIO_53_IOTYPE" spirit:choiceRef="choice_list_369f74cf" spirit:order="34853">LVCMOS 1.8V</spirit:value>
     </spirit:parameter>
     <spirit:parameter>
       <spirit:name>PCW_MIO_53_DIRECTION</spirit:name>
@@ -40310,7 +40319,9 @@
         <xilinx:configElementInfo xilinx:referenceId="PARAM_VALUE.PCW_CLK3_FREQ" xilinx:valueSource="user"/>
         <xilinx:configElementInfo xilinx:referenceId="PARAM_VALUE.PCW_DDR_RAM_HIGHADDR" xilinx:valueSource="user"/>
         <xilinx:configElementInfo xilinx:referenceId="PARAM_VALUE.PCW_EN_EMIO_GPIO" xilinx:valueSource="user"/>
+        <xilinx:configElementInfo xilinx:referenceId="PARAM_VALUE.PCW_EN_EMIO_MODEM_UART1" xilinx:valueSource="user"/>
         <xilinx:configElementInfo xilinx:referenceId="PARAM_VALUE.PCW_EN_GPIO" xilinx:valueSource="user"/>
+        <xilinx:configElementInfo xilinx:referenceId="PARAM_VALUE.PCW_EN_MODEM_UART1" xilinx:valueSource="user"/>
         <xilinx:configElementInfo xilinx:referenceId="PARAM_VALUE.PCW_EN_SMC" xilinx:valueSource="user"/>
         <xilinx:configElementInfo xilinx:referenceId="PARAM_VALUE.PCW_EN_UART1" xilinx:valueSource="user"/>
         <xilinx:configElementInfo xilinx:referenceId="PARAM_VALUE.PCW_FPGA0_PERIPHERAL_FREQMHZ" xilinx:valueSource="user"/>
@@ -40485,6 +40496,8 @@
         <xilinx:configElementInfo xilinx:referenceId="PARAM_VALUE.PCW_NAND_NAND_IO" xilinx:valueSource="user"/>
         <xilinx:configElementInfo xilinx:referenceId="PARAM_VALUE.PCW_NAND_PERIPHERAL_ENABLE" xilinx:valueSource="user"/>
         <xilinx:configElementInfo xilinx:referenceId="PARAM_VALUE.PCW_NUM_F2P_INTR_INPUTS" xilinx:valueSource="propagated" xilinx:valuePermission="bd"/>
+        <xilinx:configElementInfo xilinx:referenceId="PARAM_VALUE.PCW_PRESET_BANK0_VOLTAGE" xilinx:valueSource="user"/>
+        <xilinx:configElementInfo xilinx:referenceId="PARAM_VALUE.PCW_PRESET_BANK1_VOLTAGE" xilinx:valueSource="user"/>
         <xilinx:configElementInfo xilinx:referenceId="PARAM_VALUE.PCW_SMC_PERIPHERAL_FREQMHZ" xilinx:valueSource="user"/>
         <xilinx:configElementInfo xilinx:referenceId="PARAM_VALUE.PCW_SMC_PERIPHERAL_VALID" xilinx:valueSource="user"/>
         <xilinx:configElementInfo xilinx:referenceId="PARAM_VALUE.PCW_S_AXI_ACP_FREQMHZ" xilinx:valuePermission="bd"/>
@@ -40500,6 +40513,8 @@
         <xilinx:configElementInfo xilinx:referenceId="PARAM_VALUE.PCW_UART_PERIPHERAL_FREQMHZ" xilinx:valueSource="user"/>
         <xilinx:configElementInfo xilinx:referenceId="PARAM_VALUE.PCW_UART_PERIPHERAL_VALID" xilinx:valueSource="user"/>
         <xilinx:configElementInfo xilinx:referenceId="PARAM_VALUE.PCW_UIPARAM_ACT_DDR_FREQ_MHZ" xilinx:valueSource="user"/>
+        <xilinx:configElementInfo xilinx:referenceId="PARAM_VALUE.PCW_UIPARAM_DDR_BL" xilinx:valueSource="user"/>
+        <xilinx:configElementInfo xilinx:referenceId="PARAM_VALUE.PCW_UIPARAM_DDR_MEMORY_TYPE" xilinx:valueSource="user"/>
         <xilinx:configElementInfo xilinx:referenceId="PARAM_VALUE.PCW_UIPARAM_DDR_PARTNO" xilinx:valueSource="user"/>
         <xilinx:configElementInfo xilinx:referenceId="PARAM_VALUE.PCW_USB_RESET_ENABLE" xilinx:valueSource="user"/>
         <xilinx:configElementInfo xilinx:referenceId="PARAM_VALUE.PCW_USE_FABRIC_INTERRUPT" xilinx:valueSource="user"/>

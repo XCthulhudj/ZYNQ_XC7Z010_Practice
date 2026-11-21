@@ -56,8 +56,10 @@ if {$::dispatch::connected} {
 }
 
 OPTRACE "synth_1" START { ROLLUP_AUTO }
+set_param chipscope.maxJobs 2
 set_param general.usePosixSpawnForFork 1
 set_param bd.open.in_stealth_mode 1
+set_param xicom.use_bs_reader 1
 OPTRACE "Creating in-memory project" START { }
 create_project -in_memory -part xc7z010clg400-1
 

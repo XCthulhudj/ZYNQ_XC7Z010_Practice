@@ -1,0 +1,7 @@
+//arch = zynq; split = false; format = BIN
+the_ROM_image:
+{
+	[bootloader]D:\Data\FPGA\ZYNQ_XC7Z010_Practice\My_Project\PS\MotionCtrl\export\MotionCtrl\sw\boot\fsbl.elf
+	D:\Data\FPGA\ZYNQ_XC7Z010_Practice\My_Project\PS\Core0\_ide\bitstream\zynq_wrapper.bit
+	D:\Data\FPGA\ZYNQ_XC7Z010_Practice\My_Project\PS\Core0\build\Core0.elf
+}

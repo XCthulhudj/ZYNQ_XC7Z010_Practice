@@ -1,4 +1,5 @@
 #include <stdint.h>
+#include <stdarg.h>
 #include <string.h>
 #include "xparameters.h"
 #include "xgpiops.h"
@@ -13,6 +14,7 @@
 #include "breath_led.h"
 
 #define PS_LED_PIN 15u
+#define PS_RS485_DIR_PIN 50u
 #define PL_EMIO_KEY_PIN 54u
 #define AXI_GPIO_CHANNEL_1 1u
 
@@ -45,9 +47,12 @@ static void timer_intr_handler(void *arg);
 static void uart_intr_handler(void *arg);
 void XGpioPs_TogglePin(const XGpioPs *InstancePtr, u32 id);
 
+void rs485_write(u8 *buf, u32 len);
+
 int main(void){
     bsp_gpio_init();
     bsp_timer_init();
+    bsp_uart_init();
     bsp_gic_init();
     BREATH_LED_mWriteReg(XPAR_BREATH_LED_0_S00_AXI_BASEADDR, BREATH_LED_S00_AXI_SLV_REG0_OFFSET, 0x00000001);
     BREATH_LED_mWriteReg(XPAR_BREATH_LED_0_S00_AXI_BASEADDR, BREATH_LED_S00_AXI_SLV_REG1_OFFSET, 0x000003FF & 50);
@@ -65,8 +70,10 @@ int main(void){
         }
         if(uart_intr_flag){
             uart_intr_flag = 0;
+            rs485_write(uart1_buffer, sizeof(uart1_buffer));
             // handle
         }
+        // xil_printf("hello\r\n");
         msleep(20);
     }
 }
@@ -75,9 +82,12 @@ void bsp_gpio_init(void){
     gpio_cfg_ptr = XGpioPs_LookupConfig(XPAR_XGPIOPS_0_BASEADDR);
     XGpioPs_CfgInitialize(&gpio_inst, gpio_cfg_ptr, gpio_cfg_ptr->BaseAddr);
     XGpioPs_SetDirectionPin(&gpio_inst, PS_LED_PIN, 1);
+    XGpioPs_SetDirectionPin(&gpio_inst, PS_RS485_DIR_PIN, 1);
     XGpioPs_SetDirectionPin(&gpio_inst, PL_EMIO_KEY_PIN, 0);
     XGpioPs_SetOutputEnablePin(&gpio_inst, PS_LED_PIN, 1);
+    XGpioPs_SetOutputEnablePin(&gpio_inst, PS_RS485_DIR_PIN, 1);
     XGpioPs_WritePin(&gpio_inst, PS_LED_PIN, 0);
+    XGpioPs_WritePin(&gpio_inst, PS_RS485_DIR_PIN, 0);
 
     XGpio_Initialize(&axi_gpio_inst, XPAR_AXI_GPIO_0_BASEADDR);
     XGpio_SetDataDirection(&axi_gpio_inst, 1, 1);
@@ -156,10 +166,10 @@ static void uart_intr_handler(void *arg){
     static u8 rx_buffer[64];
     static u16 rx_len;
     u32 flag = XUartPs_ReadReg(uart_inst_ptr->Config.BaseAddress, XUARTPS_SR_OFFSET);
-    flag &= XUARTPS_SR_RXOVR | XUARTPS_SR_RXEMPTY;
-    if(flag & XUARTPS_SR_RXOVR){
+    flag &= XUARTPS_IXR_RXOVR | XUARTPS_IXR_RXEMPTY;
+    if(flag & XUARTPS_IXR_RXOVR){
         rx_len += XUartPs_Recv(uart_inst_ptr, rx_buffer, sizeof(rx_buffer));
-        if(rx_len == sizeof(rx_buffer)){
+        if(rx_len >= sizeof(rx_buffer)){
             uart_intr_flag = 1;
             rx_len = 0;
             memcpy(uart1_buffer, rx_buffer, sizeof(rx_buffer));
@@ -172,3 +182,26 @@ void XGpioPs_TogglePin(const XGpioPs *InstancePtr, u32 id){
     flag = !flag;
     XGpioPs_WritePin(InstancePtr, id, flag);
 }
+
+/* 发完一整帧再切回接收 */
+void rs485_write(u8 *buf, u32 len)
+{
+    u32 base = uart_inst.Config.BaseAddress;
+    u32 i;
+
+    XGpioPs_WritePin(&gpio_inst, PS_RS485_DIR_PIN, 1);   /* DE = 发送 */
+
+    // for (i = 0; i < len; i++) {
+    //     XUartPs_SendByte(base, buf[i]);                  /* 内部等 FIFO 空位 */
+    // }
+    XUartPs_Send(&uart_inst, buf, len);
+
+    /* FIFO 空 且 移位器停，才算这一帧真的出去了 */
+    while (!XUartPs_IsTransmitFifoEmpty(base) ||
+           XUartPs_IsTransmitActive(base)) {
+        ;
+    }
+
+    XGpioPs_WritePin(&gpio_inst, PS_RS485_DIR_PIN, 0);   /* 切回接收 */
+}
+

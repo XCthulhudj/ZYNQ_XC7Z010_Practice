@@ -59,7 +59,7 @@ os_config:
       name: standalone_stdin
       permission: read_write
       type: string
-      value: ps7_coresight_comp_0
+      value: ps7_uart_1
       default: ps7_uart_1
       options:
       - None
@@ -70,7 +70,7 @@ os_config:
       name: standalone_stdout
       permission: read_write
       type: string
-      value: ps7_coresight_comp_0
+      value: ps7_uart_1
       default: ps7_uart_1
       options:
       - None
